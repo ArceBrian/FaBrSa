@@ -1,0 +1,103 @@
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\Farmacia\bin\Debug\Farmacia.exe.config
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Menu.resources
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Rubros.resources
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Farmacia.exe
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Farmacia.pdb
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Farmacia.xml
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\FarmaciaAD.dll
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\FarmaciaAD.pdb
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\FarmaciaAD.xml
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbprojResolveAssemblyReference.cache
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.exe
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.xml
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.pdb
+C:\Users\brian\OneDrive\Escritorio\PASAR\Farmacia\Farmacia\Farmacia\bin\Debug\Farmacia.exe.config
+C:\Users\brian\OneDrive\Escritorio\Nueva carpeta (2)\Farmacia.exe
+C:\Users\brian\OneDrive\Escritorio\Nueva carpeta (2)\Farmacia.pdb
+C:\Users\brian\OneDrive\Escritorio\Nueva carpeta (2)\Farmacia.xml
+C:\Users\brian\OneDrive\Escritorio\Nueva carpeta (2)\Farmacia.exe.config
+C:\Users\brian\OneDrive\Nueva carpeta (2)\Farmacia.exe.config
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.exe
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.xml
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.pdb
+C:\Users\brian\OneDrive\Nueva carpeta (2)\Farmacia.exe
+C:\Users\brian\OneDrive\Nueva carpeta (2)\Farmacia.pdb
+C:\Users\brian\OneDrive\Nueva carpeta (2)\Farmacia.xml
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbprojResolveAssemblyReference.cache
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Menu.resources
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Rubros.resources
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
+C:\Users\brian\OneDrive\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+F:\usuarios\alumno\Nueva carpeta (2)\Farmacia.exe.config
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.exe
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.xml
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.pdb
+F:\usuarios\alumno\Nueva carpeta (2)\Farmacia.exe
+F:\usuarios\alumno\Nueva carpeta (2)\Farmacia.pdb
+F:\usuarios\alumno\Nueva carpeta (2)\Farmacia.xml
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbprojResolveAssemblyReference.cache
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Menu.resources
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Rubros.resources
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
+F:\usuarios\alumno\Escritorio\BacupFarmacio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+C:\Users\brian\Nueva carpeta (2)\Farmacia.exe.config
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.exe
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.xml
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.pdb
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbprojResolveAssemblyReference.cache
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CargaCliente.resources
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CargaProductoClientes.resources
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Menu.resources
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Rubros.resources
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
+C:\Users\brian\OneDrive\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+C:\Users\brian\Nueva carpeta (2)\Farmacia.exe
+C:\Users\brian\Nueva carpeta (2)\Farmacia.pdb
+C:\Users\brian\Nueva carpeta (2)\Farmacia.xml
+F:\usuarios\Nueva carpeta (2)\Farmacia.exe.config
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.exe
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.xml
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.pdb
+F:\usuarios\Nueva carpeta (2)\Farmacia.exe
+F:\usuarios\Nueva carpeta (2)\Farmacia.pdb
+F:\usuarios\Nueva carpeta (2)\Farmacia.xml
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbprojResolveAssemblyReference.cache
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CargaCliente.resources
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CargaProductoClientes.resources
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Menu.resources
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Rubros.resources
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+F:\usuarios\alumno\Escritorio\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Proveedores.resources
+C:\Users\FESSIA\Nueva carpeta (2)\Farmacia.exe.config
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.exe
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.xml
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.pdb
+C:\Users\FESSIA\Nueva carpeta (2)\Farmacia.exe
+C:\Users\FESSIA\Nueva carpeta (2)\Farmacia.pdb
+C:\Users\FESSIA\Nueva carpeta (2)\Farmacia.xml
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbprojResolveAssemblyReference.cache
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CargaCliente.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Menu.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Proveedores.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Rubros.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Factura.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Productos.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_ProductosItem.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_ClientesItem.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CuentaCorriente.resources
