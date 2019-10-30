@@ -101,3 +101,4 @@ C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Pr
 C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_ProductosItem.resources
 C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_ClientesItem.resources
 C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CuentaCorriente.resources
+C:\Users\FESSIA\Desktop\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_NotaCredito.resources

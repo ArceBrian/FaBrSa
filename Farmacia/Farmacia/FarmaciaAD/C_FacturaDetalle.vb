@@ -18,8 +18,8 @@ Public Class C_FacturaDetalle
     End Sub
 
 #Region "Cargar"
-    Public Function AgregarFacturaDetalle(ByVal Letra As String, ByVal PuntoVenta As Integer, ByVal Numero As Integer, ByVal IdCliente As Integer, ByVal Fecha As Date) As Double
-        Return oDatabase.ExecuteScalar("AgregarFacturaDetalle", Letra, PuntoVenta, Numero, IdCliente, Fecha)
+    Public Function AgregarFacturaDetalle(ByVal IdFactura As Integer, ByVal IdProducto As Integer, ByVal Cantidad As Integer, ByVal PrecioUnitario As Double, ByVal Total As Double) As Double
+        Return oDatabase.ExecuteScalar("AgregarFacturaDetalle", IdFactura, IdProducto, Cantidad, PrecioUnitario, Total)
     End Function
 #End Region
 

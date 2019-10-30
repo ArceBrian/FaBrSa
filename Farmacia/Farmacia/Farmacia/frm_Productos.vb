@@ -44,7 +44,7 @@ Public Class frm_Productos
                 Case EstadodelFormulario.eAgregar
 
                     HabililarEdicion()
-                    txtIdProducto.Enabled = False
+                    txt_IdProducto.Enabled = False
                     cmdAceptar.Enabled = True
                     cmdCancelar.Enabled = True
                     DesHabililarComandos()
@@ -58,7 +58,7 @@ Public Class frm_Productos
                 Case EstadodelFormulario.eEditar
 
                     HabililarEdicion()
-                    txtIdProducto.Enabled = False
+                    txt_IdProducto.Enabled = False
                     cmdAceptar.Enabled = True
                     cmdCancelar.Enabled = True
                     DesHabililarComandos()
@@ -90,9 +90,9 @@ Public Class frm_Productos
 
         oDs = oSubRubro.BuscarTodos
 
-        cboSubRubro.DataSource = oDs.Tables(0)
-        cboSubRubro.ValueMember = oDs.Tables(0).Columns(0).ToString
-        cboSubRubro.DisplayMember = oDs.Tables(0).Columns(1).ToString
+        cbo_IdSubRubro.DataSource = oDs.Tables(0)
+        cbo_IdSubRubro.ValueMember = oDs.Tables(0).Columns(0).ToString
+        cbo_IdSubRubro.DisplayMember = oDs.Tables(0).Columns(1).ToString
 
         oDs = Nothing
         oSubRubro = Nothing
@@ -124,12 +124,27 @@ Public Class frm_Productos
 
         oDs = oProducto.BuscarPorIDProducto(IdProducto)
 
-        txtIdProducto.Text = oDs.Tables(0).Rows(0).Item("IdProducto")
-        cboSubRubro.Text = oDs.Tables(0).Rows(0).Item("IdSubRubro")
-        txtProducto.Text = oDs.Tables(0).Rows(0).Item("Descripcion")
-        txtCantidad.Text = oDs.Tables(0).Rows(0).Item("Cantidad")
-        txtTroquel.Text = oDs.Tables(0).Rows(0).Item("CodigoMSP")
-        txtPrecioUnidad.Text = oDs.Tables(0).Rows(0).Item("PrecioVentaCliente")
+        txt_IdProducto.Text = oDs.Tables(0).Rows(0).Item("IdProducto")
+        txt_CodigoMSP.Text = oDs.Tables(0).Rows(0).Item("CodigoMSP")
+        txt_Descripcion.Text = oDs.Tables(0).Rows(0).Item("Descripcion")
+        txt_IdSeccion.Text = oDs.Tables(0).Rows(0).Item("IdSeccion")
+        txt_Seccion.Text = oDs.Tables(0).Rows(0).Item("Seccion")
+        txt_Venta.Text = oDs.Tables(0).Rows(0).Item("Venta")
+        txt_TipoCodBarra1.Text = oDs.Tables(0).Rows(0).Item("TipoCodBarra1")
+        txt_CodigoBarra1.Text = oDs.Tables(0).Rows(0).Item("CodigoBarra1")
+        txt_TipoCodBarra2.Text = oDs.Tables(0).Rows(0).Item("TipoCodBarra2")
+        txt_CodigoBarra2.Text = oDs.Tables(0).Rows(0).Item("CodigoBarra2")
+        txt_TipoCodBarra3.Text = oDs.Tables(0).Rows(0).Item("TipoCodBarra3")
+        txt_CodigoBarra3.Text = oDs.Tables(0).Rows(0).Item("CodigoBarra3")
+        txt_TipoCodBarra4.Text = oDs.Tables(0).Rows(0).Item("TipoCodBarra4")
+        txt_CodigoBarra4.Text = oDs.Tables(0).Rows(0).Item("CodigoBarra4")
+        txt_PrecioVentaCliente.Text = oDs.Tables(0).Rows(0).Item("PrecioVentaCliente")
+        txt_PrecioSugerido.Text = oDs.Tables(0).Rows(0).Item("PrecioSugerido")
+        txt_CodigoLaboratorio.Text = oDs.Tables(0).Rows(0).Item("CodigoLaboratorio")
+        txt_Laboratorio.Text = oDs.Tables(0).Rows(0).Item("Laboratorio")
+        txt_CuitLaboratorio.Text = oDs.Tables(0).Rows(0).Item("CuitLaboratorio")
+        cbo_IdSubRubro.Text = oDs.Tables(0).Rows(0).Item("IdSubRubro")
+        txt_Cantidad.Text = oDs.Tables(0).Rows(0).Item("Cantidad")
 
         oDs = Nothing
         oProducto = Nothing
@@ -139,34 +154,79 @@ Public Class frm_Productos
     Private Sub Limpiar()
 
         CargarGrilla()
-        txtIdProducto.Text = ""
-        txtProducto.Text = ""
-        txtCantidad.Text = ""
-        txtTroquel.Text = ""
-        txtPrecioUnidad.Text = ""
+        txt_IdProducto.Text = " "
+        txt_CodigoMSP.Text = " "
+        txt_Descripcion.Text = " "
+        txt_IdSeccion.Text = " "
+        txt_Seccion.Text = " "
+        txt_Venta.Text = " "
+        txt_TipoCodBarra1.Text = " "
+        txt_CodigoBarra1.Text = " "
+        txt_TipoCodBarra2.Text = " "
+        txt_CodigoBarra2.Text = " "
+        txt_TipoCodBarra3.Text = " "
+        txt_CodigoBarra3.Text = " "
+        txt_TipoCodBarra4.Text = " "
+        txt_CodigoBarra4.Text = " "
+        txt_PrecioVentaCliente.Text = " "
+        txt_PrecioSugerido.Text = " "
+        txt_CodigoLaboratorio.Text = " "
+        txt_Laboratorio.Text = " "
+        txt_CuitLaboratorio.Text = " "
         CargarSubRubros()
+        txt_Cantidad.Text = " "
 
     End Sub
 
     Private Sub HabililarEdicion()
 
-        txtIdProducto.Enabled = True
-        txtProducto.Enabled = True
-        txtCantidad.Enabled = True
-        txtTroquel.Enabled = True
-        txtPrecioUnidad.Enabled = True
-        cboSubRubro.Enabled = True
+        txt_IdProducto.Enabled = True
+        txt_CodigoMSP.Enabled = True
+        txt_Descripcion.Enabled = True
+        txt_IdSeccion.Enabled = True
+        txt_Seccion.Enabled = True
+        txt_Venta.Enabled = True
+        txt_TipoCodBarra1.Enabled = True
+        txt_CodigoBarra1.Enabled = True
+        txt_TipoCodBarra2.Enabled = True
+        txt_CodigoBarra2.Enabled = True
+        txt_TipoCodBarra3.Enabled = True
+        txt_CodigoBarra3.Enabled = True
+        txt_TipoCodBarra4.Enabled = True
+        txt_CodigoBarra4.Enabled = True
+        txt_PrecioVentaCliente.Enabled = True
+        txt_PrecioSugerido.Enabled = True
+        txt_CodigoLaboratorio.Enabled = True
+        txt_Laboratorio.Enabled = True
+        txt_CuitLaboratorio.Enabled = True
+        cbo_IdSubRubro.Enabled = True
+        txt_Cantidad.Enabled = True
 
     End Sub
 
     Private Sub DesHabililarEdicion()
 
-        txtIdProducto.Enabled = False
-        txtProducto.Enabled = False
-        txtCantidad.Enabled = False
-        txtTroquel.Enabled = False
-        txtPrecioUnidad.Enabled = False
-        cboSubRubro.Enabled = False
+        txt_IdProducto.Enabled = False
+        txt_CodigoMSP.Enabled = False
+        txt_Descripcion.Enabled = False
+        txt_IdSeccion.Enabled = False
+        txt_Seccion.Enabled = False
+        txt_Venta.Enabled = False
+        txt_TipoCodBarra1.Enabled = False
+        txt_CodigoBarra1.Enabled = False
+        txt_TipoCodBarra2.Enabled = False
+        txt_CodigoBarra2.Enabled = False
+        txt_TipoCodBarra3.Enabled = False
+        txt_CodigoBarra3.Enabled = False
+        txt_TipoCodBarra4.Enabled = False
+        txt_CodigoBarra4.Enabled = False
+        txt_PrecioVentaCliente.Enabled = False
+        txt_PrecioSugerido.Enabled = False
+        txt_CodigoLaboratorio.Enabled = False
+        txt_Laboratorio.Enabled = False
+        txt_CuitLaboratorio.Enabled = True
+        cbo_IdSubRubro.Enabled = True
+        txt_Cantidad.Enabled = True
 
     End Sub
 
@@ -209,7 +269,7 @@ Public Class frm_Productos
         Me.Estado = EstadodelFormulario.eEditar
     End Sub
 
-    Private Sub CmdAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAceptar.Click
+    Private Sub CmdAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Try
 
@@ -220,14 +280,14 @@ Public Class frm_Productos
 
 
                 If Me.Estado = EstadodelFormulario.eEditar Then
-                    oProducto.Modificar(txtIdProducto.Text, cboSubRubro.SelectedValue, txtProducto.Text, txtCantidad.Text, txtTroquel.Text, txtPrecioUnidad.Text)
-                    MsgBox("Se modificó correctamente el subrubro con el código Nro: " + txtIdProducto.Text, MsgBoxStyle.Information, "Exitos!")
+                    oProducto.Modificar(txt_IdProducto.Text, txt_CodigoMSP.Text, txt_Descripcion.Text, txt_IdSeccion.Text, txt_Seccion.Text, txt_Venta.Text, txt_TipoCodBarra1.Text, txt_CodigoBarra1.Text, txt_TipoCodBarra2.Text, txt_CodigoBarra2.Text, txt_TipoCodBarra3.Text, txt_CodigoBarra3.Text, txt_TipoCodBarra4.Text, txt_CodigoBarra4.Text, txt_PrecioVentaCliente.Text, txt_PrecioSugerido.Text, txt_CodigoLaboratorio.Text, txt_Laboratorio.Text, txt_CuitLaboratorio.Text, cbo_IdSubRubro.Text, txt_Cantidad.Text)
+                    MsgBox("Se modificó correctamente el subrubro con el código Nro: " + txt_IdProducto.Text, MsgBoxStyle.Information, "¡Éxitos!")
                 End If
 
                 If Me.Estado = EstadodelFormulario.eAgregar Then
                     Dim resultado As Integer
-                    resultado = oProducto.Agregar(cboSubRubro.SelectedValue, txtProducto.Text, txtCantidad.Text, txtTroquel.Text, txtPrecioUnidad.Text)
-                    MsgBox("Se agregó correctamente el rubro " + txtProducto.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
+                    resultado = oProducto.Agregar(txt_IdProducto.Text, txt_CodigoMSP.Text, txt_Descripcion.Text, txt_IdSeccion.Text, txt_Seccion.Text, txt_Venta.Text, txt_TipoCodBarra1.Text, txt_CodigoBarra1.Text, txt_TipoCodBarra2.Text, txt_CodigoBarra2.Text, txt_TipoCodBarra3.Text, txt_CodigoBarra3.Text, txt_TipoCodBarra4.Text, txt_CodigoBarra4.Text, txt_PrecioVentaCliente.Text, txt_PrecioSugerido.Text, txt_CodigoLaboratorio.Text, txt_Laboratorio.Text, txt_CuitLaboratorio.Text, cbo_IdSubRubro.Text, txt_Cantidad.Text)
+                    MsgBox("Se agregó correctamente el rubro " + txt_IdProducto.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
                 End If
 
                 Me.Estado = EstadodelFormulario.eConsulta
@@ -243,7 +303,7 @@ Public Class frm_Productos
 
     End Sub
 
-    Private Sub CmdCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancelar.Click
+    Private Sub CmdCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
                "Se perderán las ultimas modificaciones", _
                vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
@@ -267,7 +327,7 @@ Public Class frm_Productos
 
     Private Function Validar() As Boolean
 
-        If txtProducto.Text = "" Then
+        If txt_Descripcion.Text = "" Then
 
             MsgBox("Complete el nombre del subrubro", MsgBoxStyle.Exclamation, "Mensaje")
             Return False
@@ -288,4 +348,5 @@ Public Class frm_Productos
 
     End Sub
 #End Region
+
 End Class

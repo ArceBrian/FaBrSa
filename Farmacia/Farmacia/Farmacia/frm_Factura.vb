@@ -109,7 +109,7 @@ Public Class frm_Factura
     End Sub
 #End Region
 
-#Region "Cargar cbo Factturas"
+#Region "Cargar cbo Facturas"
     Private Sub cargarcboFacturas()
         Dim ods As New DataSet
         Dim oFactura As New C_Factura
@@ -170,17 +170,22 @@ Public Class frm_Factura
 
         Dim oFactura As New C_Factura
         Dim oFacturaDetalle As New C_FacturaDetalle
+        Dim oProducto As New C_Productos
         Dim resultado As Integer
 
-        resultado = oFactura.AgregarFactura(cboTipoFact.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date)
+        'PARA FECHA ES .VALUE.DATE
+
+        resultado = oFactura.AgregarFactura(cboCondicion.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date, txtTotal.Text)
 
 
-        'For i = 0 To grlGrillaa.Row.Count - 1
+        For i = 0 To grlGrillaa.Rows.Count - 2
 
-        ' oFacturaDetalle.AgregarFacturaDetalle(resultado, 0, 1, 2, 3)
+            oFacturaDetalle.AgregarFacturaDetalle(resultado, grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value, grlGrillaa.Rows(i).Cells(3).Value, grlGrillaa.Rows(i).Cells(4).Value)
 
-        ' Next
-        '(resultado,(i,0),(i,1),(i,2),(i,3))
+            oProducto.RestarStock(grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value)
+
+        Next
+
 
 
 
