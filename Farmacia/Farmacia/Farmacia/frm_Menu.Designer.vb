@@ -37,12 +37,13 @@ Partial Class frm_Menu
         Me.ItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.YellowGreen
+        Me.MenuStrip1.BackColor = System.Drawing.Color.GreenYellow
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ItemsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -132,6 +133,17 @@ Partial Class frm_Menu
         Me.ClientesItemsToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.ClientesItemsToolStripMenuItem.Text = "Clientes Items"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel1.BackgroundImage = Global.Farmacia.My.Resources.Resources.unnamed
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(422, 318)
+        Me.Panel1.TabIndex = 2
+        '
         'frm_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -139,7 +151,8 @@ Partial Class frm_Menu
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Farmacia.My.Resources.Resources._314252
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(422, 272)
+        Me.ClientSize = New System.Drawing.Size(422, 342)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -166,4 +179,5 @@ Partial Class frm_Menu
     Friend WithEvents ProductosItemsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClientesItemsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 End Class
