@@ -124,7 +124,7 @@ Public Class frm_Productos
 
         oDs = oProducto.BuscarPorIDProducto(IdProducto)
 
-        txt_IdProducto.Text = oDs.Tables(0).Rows(0).Item("IdProducto")
+        txt_CodigoMSP.Text = oDs.Tables(0).Rows(0).Item("IdProducto")
         txt_CodigoMSP.Text = oDs.Tables(0).Rows(0).Item("CodigoMSP")
         txt_Descripcion.Text = oDs.Tables(0).Rows(0).Item("Descripcion")
         txt_IdSeccion.Text = oDs.Tables(0).Rows(0).Item("IdSeccion")
@@ -151,6 +151,20 @@ Public Class frm_Productos
 
     End Sub
 
+#Region "FiltarDatos"
+    Private Sub cmdFiltrarProd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdFiltrarProd.Click
+        Dim ods As New DataSet
+        Dim oFarmacia As New C_Productos
+
+        If txtFiltrar.Text <> Nothing Then
+
+            ods = oFarmacia.FiltrarDatos(txtFiltrar.Text)
+            grlGrilla.DataSource = ods.Tables(0)
+            grlGrilla.Refresh()
+        End If
+    End Sub
+#End Region
+
     Private Sub Limpiar()
 
         CargarGrilla()
@@ -175,6 +189,7 @@ Public Class frm_Productos
         txt_CuitLaboratorio.Text = " "
         CargarSubRubros()
         txt_Cantidad.Text = " "
+        txtFiltrar.Text = ""
 
     End Sub
 
@@ -286,7 +301,7 @@ Public Class frm_Productos
 
                 If Me.Estado = EstadodelFormulario.eAgregar Then
                     Dim resultado As Integer
-                    resultado = oProducto.Agregar(txt_IdProducto.Text, txt_CodigoMSP.Text, txt_Descripcion.Text, txt_IdSeccion.Text, txt_Seccion.Text, txt_Venta.Text, txt_TipoCodBarra1.Text, txt_CodigoBarra1.Text, txt_TipoCodBarra2.Text, txt_CodigoBarra2.Text, txt_TipoCodBarra3.Text, txt_CodigoBarra3.Text, txt_TipoCodBarra4.Text, txt_CodigoBarra4.Text, txt_PrecioVentaCliente.Text, txt_PrecioSugerido.Text, txt_CodigoLaboratorio.Text, txt_Laboratorio.Text, txt_CuitLaboratorio.Text, cbo_IdSubRubro.Text, txt_Cantidad.Text)
+                    resultado = oProducto.Agregar(txt_CodigoMSP.Text, txt_Descripcion.Text, txt_IdSeccion.Text, txt_Seccion.Text, txt_Venta.Text, txt_TipoCodBarra1.Text, txt_CodigoBarra1.Text, txt_TipoCodBarra2.Text, txt_CodigoBarra2.Text, txt_TipoCodBarra3.Text, txt_CodigoBarra3.Text, txt_TipoCodBarra4.Text, txt_CodigoBarra4.Text, txt_PrecioVentaCliente.Text, txt_PrecioSugerido.Text, txt_CodigoLaboratorio.Text, txt_Laboratorio.Text, txt_CuitLaboratorio.Text, cbo_IdSubRubro.Text, txt_Cantidad.Text)
                     MsgBox("Se agregó correctamente el rubro " + txt_IdProducto.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
                 End If
 
@@ -349,4 +364,51 @@ Public Class frm_Productos
     End Sub
 #End Region
 
+    Private Sub cmdAceptar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAceptar.Click
+        Try
+
+            If Validar() = True Then
+
+
+                Dim oProducto As New C_Productos
+
+
+                If Me.Estado = EstadodelFormulario.eEditar Then
+                    oProducto.Modificar(txt_IdProducto.Text, txt_CodigoMSP.Text, txt_Descripcion.Text, txt_IdSeccion.Text, txt_Seccion.Text, txt_Venta.Text, txt_TipoCodBarra1.Text, txt_CodigoBarra1.Text, txt_TipoCodBarra2.Text, txt_CodigoBarra2.Text, txt_TipoCodBarra3.Text, txt_CodigoBarra3.Text, txt_TipoCodBarra4.Text, txt_CodigoBarra4.Text, txt_PrecioVentaCliente.Text, txt_PrecioSugerido.Text, txt_CodigoLaboratorio.Text, txt_Laboratorio.Text, txt_CuitLaboratorio.Text, cbo_IdSubRubro.Text, txt_Cantidad.Text)
+                    MsgBox("Se modificó correctamente el producto con el código Nro: " + txt_IdProducto.Text, MsgBoxStyle.Information, "Exitos!")
+                End If
+
+                If Me.Estado = EstadodelFormulario.eAgregar Then
+                    Dim resultado As Integer
+                    resultado = oProducto.Agregar(txt_CodigoMSP.Text, txt_Descripcion.Text, txt_IdSeccion.Text, txt_Seccion.Text, txt_Venta.Text, txt_TipoCodBarra1.Text, txt_CodigoBarra1.Text, txt_TipoCodBarra2.Text, txt_CodigoBarra2.Text, txt_TipoCodBarra3.Text, txt_CodigoBarra3.Text, txt_TipoCodBarra4.Text, txt_CodigoBarra4.Text, txt_PrecioVentaCliente.Text, txt_PrecioSugerido.Text, txt_CodigoLaboratorio.Text, txt_Laboratorio.Text, txt_CuitLaboratorio.Text, cbo_IdSubRubro.Text, txt_Cantidad.Text)
+                    MsgBox("Se agregó correctamente el rubro " + txt_Descripcion.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
+                End If
+
+                Me.Estado = EstadodelFormulario.eConsulta
+
+            End If
+
+        Catch
+
+            MsgBox("Sucedió un error", MsgBoxStyle.Critical, "Error")
+
+        End Try
+    End Sub
+
+    Private Sub cmdCancelar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancelar.Click
+        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
+          "Se perderán las ultimas modificaciones", _
+          vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+
+            Me.Estado = EstadodelFormulario.eConsulta
+
+        End If
+
+
+        Exit Sub
+    End Sub
+
+    Private Sub cbo_IdSubRubro_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbo_IdSubRubro.SelectedIndexChanged
+
+    End Sub
 End Class

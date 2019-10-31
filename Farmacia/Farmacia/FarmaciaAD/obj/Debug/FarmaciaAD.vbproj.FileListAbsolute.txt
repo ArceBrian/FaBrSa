@@ -48,3 +48,12 @@ C:\Users\FESSIA\Desktop\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.vbproj
 C:\Users\FESSIA\Desktop\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.dll
 C:\Users\FESSIA\Desktop\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.xml
 C:\Users\FESSIA\Desktop\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.pdb
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\bin\Debug\FarmaciaAD.dll
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\bin\Debug\FarmaciaAD.pdb
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\bin\Debug\FarmaciaAD.xml
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.vbprojResolveAssemblyReference.cache
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.Resources.resources
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.vbproj.GenerateResource.Cache
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.dll
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.xml
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\FarmaciaAD\obj\Debug\FarmaciaAD.pdb
