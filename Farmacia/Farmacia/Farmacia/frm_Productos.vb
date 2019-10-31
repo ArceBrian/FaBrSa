@@ -224,9 +224,9 @@ Public Class frm_Productos
         txt_PrecioSugerido.Enabled = False
         txt_CodigoLaboratorio.Enabled = False
         txt_Laboratorio.Enabled = False
-        txt_CuitLaboratorio.Enabled = True
-        cbo_IdSubRubro.Enabled = True
-        txt_Cantidad.Enabled = True
+        txt_CuitLaboratorio.Enabled = False
+        cbo_IdSubRubro.Enabled = False
+        txt_Cantidad.Enabled = False
 
     End Sub
 

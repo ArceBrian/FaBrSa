@@ -22,7 +22,6 @@ Public Class frm_CargaCliente
 
 #Region "Propiedades"
 
-
     Public Property Estado() As EstadodelFormulario
         Get
             Return eEstado
@@ -241,7 +240,6 @@ Public Class frm_CargaCliente
             Me.Estado = EstadodelFormulario.eConsulta
 
         End If
-
 
         Exit Sub
     End Sub

@@ -106,6 +106,9 @@ Public Class frm_Factura
         txtPuntoVenta.Text = String.Format("{0:0000}", Punto)
         txtNroComp.Text = String.Format("{0:000000}", Nro)
 
+        NumeroComprobante()
+
+
     End Sub
 #End Region
 
@@ -143,9 +146,9 @@ Public Class frm_Factura
         Dim ods As New DataSet
         Dim oFactura As New C_Factura
 
-        ods = oFactura.NumeroComprobante(cboTipoFact.Text, txtPuntoVenta.Text)
+        ods = oFactura.NumeroComprobante
 
-        txtNroComp.Text = ods.Tables(0).Rows(0).Item("Numero").ToString.PadLeft(8, "0")
+        txtNroComp.Text = ods.Tables(0).Rows(0).Item("IdFactura")
     End Sub
 #End Region
 
@@ -167,28 +170,38 @@ Public Class frm_Factura
         txtNroComp.Text = Nro.ToString("D5") 'Numero Comprobante
 
 
+            Dim oFactura As New C_Factura
+            Dim oFacturaDetalle As New C_FacturaDetalle
+            Dim oProducto As New C_Productos
+            Dim resultado As Integer
 
-        Dim oFactura As New C_Factura
-        Dim oFacturaDetalle As New C_FacturaDetalle
-        Dim oProducto As New C_Productos
-        Dim resultado As Integer
+            'PARA FECHA ES .VALUE.DATE
 
-        'PARA FECHA ES .VALUE.DATE
-
-        resultado = oFactura.AgregarFactura(cboCondicion.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date, txtTotal.Text)
-
-
-        For i = 0 To grlGrillaa.Rows.Count - 2
-
-            oFacturaDetalle.AgregarFacturaDetalle(resultado, grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value, grlGrillaa.Rows(i).Cells(3).Value, grlGrillaa.Rows(i).Cells(4).Value)
-
-            oProducto.RestarStock(grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value)
-
-        Next
+            resultado = oFactura.AgregarFactura(cboCondicion.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date, txtTotal.Text)
 
 
+            For i = 0 To grlGrillaa.Rows.Count - 2
+
+                oFacturaDetalle.AgregarFacturaDetalle(resultado, grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value, grlGrillaa.Rows(i).Cells(3).Value, grlGrillaa.Rows(i).Cells(4).Value)
+
+                oProducto.RestarStock(grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value)
+
+            Next
+
+        MsgBox("Se realizó la factura exitosamente!")
 
 
+
+    End Sub
+#End Region
+
+#Region "Cancelar"
+    Private Sub cmdCancelar_Click(sender As System.Object, e As System.EventArgs) Handles cmdCancelar.Click
+        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
+              "Se perderán las ultimas modificaciones", _
+              vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+
+        End If
     End Sub
 #End Region
 
