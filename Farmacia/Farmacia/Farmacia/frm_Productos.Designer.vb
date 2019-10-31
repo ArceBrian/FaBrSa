@@ -572,7 +572,7 @@ Partial Class frm_Productos
         Me.Controls.Add(Me.grlGrilla)
         Me.Name = "frm_Productos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frm_Productos"
+        Me.Text = "Carga de productos"
         CType(Me.grlGrilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

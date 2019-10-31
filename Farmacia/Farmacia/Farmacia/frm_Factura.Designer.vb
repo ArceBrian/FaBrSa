@@ -26,8 +26,8 @@ Partial Class frm_Factura
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Factura))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.txtIdFactura = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.cboCondicion = New System.Windows.Forms.ComboBox()
@@ -54,7 +54,6 @@ Partial Class frm_Factura
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombreCliente = New System.Windows.Forms.TextBox()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.Productos = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -68,7 +67,6 @@ Partial Class frm_Factura
         Me.txtCantidad = New System.Windows.Forms.TextBox()
         Me.txtIdProd = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.cmdBuscar = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -89,6 +87,9 @@ Partial Class frm_Factura
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.cmdBuscar = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Productos.SuspendLayout()
@@ -117,15 +118,6 @@ Partial Class frm_Factura
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Fatura"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(155, 19)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(42, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "..."
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'txtIdFactura
         '
@@ -357,15 +349,6 @@ Partial Class frm_Factura
         Me.txtNombreCliente.Size = New System.Drawing.Size(291, 20)
         Me.txtNombreCliente.TabIndex = 13
         '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(193, 19)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(42, 23)
-        Me.Button6.TabIndex = 12
-        Me.Button6.Text = "..."
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'txtIdCliente
         '
         Me.txtIdCliente.Enabled = False
@@ -445,20 +428,20 @@ Partial Class frm_Factura
         '
         'cmdQuitar
         '
+        Me.cmdQuitar.Image = CType(resources.GetObject("cmdQuitar.Image"), System.Drawing.Image)
         Me.cmdQuitar.Location = New System.Drawing.Point(594, 144)
         Me.cmdQuitar.Name = "cmdQuitar"
         Me.cmdQuitar.Size = New System.Drawing.Size(42, 23)
         Me.cmdQuitar.TabIndex = 29
-        Me.cmdQuitar.Text = "-"
         Me.cmdQuitar.UseVisualStyleBackColor = True
         '
         'cmdAgregar
         '
+        Me.cmdAgregar.Image = CType(resources.GetObject("cmdAgregar.Image"), System.Drawing.Image)
         Me.cmdAgregar.Location = New System.Drawing.Point(546, 144)
         Me.cmdAgregar.Name = "cmdAgregar"
         Me.cmdAgregar.Size = New System.Drawing.Size(42, 22)
         Me.cmdAgregar.TabIndex = 28
-        Me.cmdAgregar.Text = "+"
         Me.cmdAgregar.UseVisualStyleBackColor = True
         '
         'txtPrecioUnidad
@@ -498,15 +481,6 @@ Partial Class frm_Factura
         Me.Label15.Size = New System.Drawing.Size(76, 13)
         Me.Label15.TabIndex = 23
         Me.Label15.Text = "Precio Unitario"
-        '
-        'cmdBuscar
-        '
-        Me.cmdBuscar.Location = New System.Drawing.Point(343, 18)
-        Me.cmdBuscar.Name = "cmdBuscar"
-        Me.cmdBuscar.Size = New System.Drawing.Size(42, 23)
-        Me.cmdBuscar.TabIndex = 19
-        Me.cmdBuscar.Text = "..."
-        Me.cmdBuscar.UseVisualStyleBackColor = True
         '
         'Label14
         '
@@ -585,18 +559,22 @@ Partial Class frm_Factura
         '
         'cmdCancelar
         '
-        Me.cmdCancelar.Location = New System.Drawing.Point(642, 362)
+        Me.cmdCancelar.Image = CType(resources.GetObject("cmdCancelar.Image"), System.Drawing.Image)
+        Me.cmdCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdCancelar.Location = New System.Drawing.Point(643, 362)
         Me.cmdCancelar.Name = "cmdCancelar"
-        Me.cmdCancelar.Size = New System.Drawing.Size(102, 23)
+        Me.cmdCancelar.Size = New System.Drawing.Size(85, 23)
         Me.cmdCancelar.TabIndex = 4
         Me.cmdCancelar.Text = "Cancelar"
         Me.cmdCancelar.UseVisualStyleBackColor = True
         '
         'cmdAceptar
         '
-        Me.cmdAceptar.Location = New System.Drawing.Point(534, 362)
+        Me.cmdAceptar.Image = CType(resources.GetObject("cmdAceptar.Image"), System.Drawing.Image)
+        Me.cmdAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdAceptar.Location = New System.Drawing.Point(546, 362)
         Me.cmdAceptar.Name = "cmdAceptar"
-        Me.cmdAceptar.Size = New System.Drawing.Size(102, 23)
+        Me.cmdAceptar.Size = New System.Drawing.Size(85, 23)
         Me.cmdAceptar.TabIndex = 3
         Me.cmdAceptar.Text = "Aceptar"
         Me.cmdAceptar.UseVisualStyleBackColor = True
@@ -710,6 +688,33 @@ Partial Class frm_Factura
         Me.Label10.Size = New System.Drawing.Size(45, 13)
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Label10"
+        '
+        'cmdBuscar
+        '
+        Me.cmdBuscar.Image = CType(resources.GetObject("cmdBuscar.Image"), System.Drawing.Image)
+        Me.cmdBuscar.Location = New System.Drawing.Point(343, 18)
+        Me.cmdBuscar.Name = "cmdBuscar"
+        Me.cmdBuscar.Size = New System.Drawing.Size(42, 23)
+        Me.cmdBuscar.TabIndex = 19
+        Me.cmdBuscar.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Location = New System.Drawing.Point(193, 19)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(42, 23)
+        Me.Button6.TabIndex = 12
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(155, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(42, 23)
+        Me.Button1.TabIndex = 20
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'frm_Factura
         '

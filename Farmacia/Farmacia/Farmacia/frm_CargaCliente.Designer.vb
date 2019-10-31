@@ -22,6 +22,7 @@ Partial Class frm_CargaCliente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_CargaCliente))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblAccion = New System.Windows.Forms.Label()
         Me.cmdSalir = New System.Windows.Forms.Button()
@@ -291,6 +292,8 @@ Partial Class frm_CargaCliente
         '
         'cmdBuscar
         '
+        Me.cmdBuscar.Image = CType(resources.GetObject("cmdBuscar.Image"), System.Drawing.Image)
+        Me.cmdBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdBuscar.Location = New System.Drawing.Point(235, 6)
         Me.cmdBuscar.Name = "cmdBuscar"
         Me.cmdBuscar.Size = New System.Drawing.Size(121, 23)
@@ -314,7 +317,7 @@ Partial Class frm_CargaCliente
         Me.Controls.Add(Me.cmdAgregar)
         Me.Name = "frm_CargaCliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "CargaCliente"
+        Me.Text = "Carga de cliente"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.grpCliente.ResumeLayout(False)

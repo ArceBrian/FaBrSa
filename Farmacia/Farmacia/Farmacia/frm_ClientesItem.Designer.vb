@@ -22,6 +22,7 @@ Partial Class frm_ClientesItem
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_ClientesItem))
         Me.cmdLimpiar = New System.Windows.Forms.Button()
         Me.cmdFiltrarD = New System.Windows.Forms.Button()
         Me.txtFiltrar = New System.Windows.Forms.TextBox()
@@ -43,11 +44,13 @@ Partial Class frm_ClientesItem
         '
         'cmdFiltrarD
         '
+        Me.cmdFiltrarD.Image = CType(resources.GetObject("cmdFiltrarD.Image"), System.Drawing.Image)
+        Me.cmdFiltrarD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdFiltrarD.Location = New System.Drawing.Point(173, 5)
         Me.cmdFiltrarD.Name = "cmdFiltrarD"
         Me.cmdFiltrarD.Size = New System.Drawing.Size(125, 23)
         Me.cmdFiltrarD.TabIndex = 8
-        Me.cmdFiltrarD.Text = "Buscar"
+        Me.cmdFiltrarD.Text = "Buscar nombre"
         Me.cmdFiltrarD.UseVisualStyleBackColor = True
         '
         'txtFiltrar
