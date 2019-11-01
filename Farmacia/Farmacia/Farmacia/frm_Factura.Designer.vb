@@ -22,12 +22,13 @@ Partial Class frm_Factura
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Factura))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Factura))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.txtIdFactura = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.cboCondicion = New System.Windows.Forms.ComboBox()
@@ -54,10 +55,9 @@ Partial Class frm_Factura
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombreCliente = New System.Windows.Forms.TextBox()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.Productos = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.cmdQuitar = New System.Windows.Forms.Button()
@@ -67,6 +67,7 @@ Partial Class frm_Factura
         Me.txtCantidad = New System.Windows.Forms.TextBox()
         Me.txtIdProd = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.cmdBuscar = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -84,12 +85,11 @@ Partial Class frm_Factura
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.cmdLimpiar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.cmdBuscar = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Productos.SuspendLayout()
@@ -118,6 +118,15 @@ Partial Class frm_Factura
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Fatura"
+        '
+        'Button1
+        '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(155, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(42, 23)
+        Me.Button1.TabIndex = 20
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'txtIdFactura
         '
@@ -207,6 +216,7 @@ Partial Class frm_Factura
         '
         'txtNroComp
         '
+        Me.txtNroComp.Enabled = False
         Me.txtNroComp.Location = New System.Drawing.Point(216, 74)
         Me.txtNroComp.Name = "txtNroComp"
         Me.txtNroComp.Size = New System.Drawing.Size(121, 20)
@@ -214,6 +224,7 @@ Partial Class frm_Factura
         '
         'txtPuntoVenta
         '
+        Me.txtPuntoVenta.Enabled = False
         Me.txtPuntoVenta.Location = New System.Drawing.Point(92, 74)
         Me.txtPuntoVenta.Name = "txtPuntoVenta"
         Me.txtPuntoVenta.Size = New System.Drawing.Size(57, 20)
@@ -349,6 +360,15 @@ Partial Class frm_Factura
         Me.txtNombreCliente.Size = New System.Drawing.Size(291, 20)
         Me.txtNombreCliente.TabIndex = 13
         '
+        'Button6
+        '
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Location = New System.Drawing.Point(193, 19)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(42, 23)
+        Me.Button6.TabIndex = 12
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'txtIdCliente
         '
         Me.txtIdCliente.Enabled = False
@@ -390,24 +410,6 @@ Partial Class frm_Factura
         Me.Productos.TabIndex = 2
         Me.Productos.TabStop = False
         Me.Productos.Text = "Buscar productos"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.Window
-        Me.TextBox2.Location = New System.Drawing.Point(85, 350)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(443, 42)
-        Me.TextBox2.TabIndex = 33
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(4, 353)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(63, 13)
-        Me.Label21.TabIndex = 32
-        Me.Label21.Text = "Descripción"
         '
         'TextBox1
         '
@@ -481,6 +483,15 @@ Partial Class frm_Factura
         Me.Label15.Size = New System.Drawing.Size(76, 13)
         Me.Label15.TabIndex = 23
         Me.Label15.Text = "Precio Unitario"
+        '
+        'cmdBuscar
+        '
+        Me.cmdBuscar.Image = CType(resources.GetObject("cmdBuscar.Image"), System.Drawing.Image)
+        Me.cmdBuscar.Location = New System.Drawing.Point(343, 18)
+        Me.cmdBuscar.Name = "cmdBuscar"
+        Me.cmdBuscar.Size = New System.Drawing.Size(42, 23)
+        Me.cmdBuscar.TabIndex = 19
+        Me.cmdBuscar.UseVisualStyleBackColor = True
         '
         'Label14
         '
@@ -624,6 +635,7 @@ Partial Class frm_Factura
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.grlGrillaa.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.grlGrillaa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grlGrillaa.Size = New System.Drawing.Size(695, 134)
         Me.grlGrillaa.TabIndex = 11
         '
@@ -662,14 +674,14 @@ Partial Class frm_Factura
         Me.Column5.Name = "Column5"
         Me.Column5.Width = 62
         '
-        'Button3
+        'cmdLimpiar
         '
-        Me.Button3.Location = New System.Drawing.Point(21, 12)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(101, 23)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Limpiar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.cmdLimpiar.Location = New System.Drawing.Point(21, 12)
+        Me.cmdLimpiar.Name = "cmdLimpiar"
+        Me.cmdLimpiar.Size = New System.Drawing.Size(101, 23)
+        Me.cmdLimpiar.TabIndex = 6
+        Me.cmdLimpiar.Text = "Limpiar"
+        Me.cmdLimpiar.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -689,32 +701,23 @@ Partial Class frm_Factura
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Label10"
         '
-        'cmdBuscar
+        'Label21
         '
-        Me.cmdBuscar.Image = CType(resources.GetObject("cmdBuscar.Image"), System.Drawing.Image)
-        Me.cmdBuscar.Location = New System.Drawing.Point(343, 18)
-        Me.cmdBuscar.Name = "cmdBuscar"
-        Me.cmdBuscar.Size = New System.Drawing.Size(42, 23)
-        Me.cmdBuscar.TabIndex = 19
-        Me.cmdBuscar.UseVisualStyleBackColor = True
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(18, 353)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(63, 13)
+        Me.Label21.TabIndex = 32
+        Me.Label21.Text = "Descripción"
         '
-        'Button6
+        'TextBox2
         '
-        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.Location = New System.Drawing.Point(193, 19)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(42, 23)
-        Me.Button6.TabIndex = 12
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(155, 19)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(42, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox2.Location = New System.Drawing.Point(85, 350)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(443, 42)
+        Me.TextBox2.TabIndex = 33
         '
         'frm_Factura
         '
@@ -723,7 +726,7 @@ Partial Class frm_Factura
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(797, 683)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.cmdLimpiar)
         Me.Controls.Add(Me.Productos)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -755,7 +758,7 @@ Partial Class frm_Factura
     Friend WithEvents txtNroComp As System.Windows.Forms.TextBox
     Friend WithEvents txtPuntoVenta As System.Windows.Forms.TextBox
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents cmdLimpiar As System.Windows.Forms.Button
     Public WithEvents txtIdCliente As System.Windows.Forms.TextBox
     Public WithEvents txtLocalidad As System.Windows.Forms.TextBox
     Public WithEvents txtDireccion As System.Windows.Forms.TextBox
@@ -800,11 +803,11 @@ Partial Class frm_Factura
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents cboCondicion As System.Windows.Forms.ComboBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents txtIdFactura As System.Windows.Forms.TextBox
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
 End Class

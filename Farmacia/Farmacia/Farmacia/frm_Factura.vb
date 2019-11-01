@@ -108,7 +108,6 @@ Public Class frm_Factura
 
         NumeroComprobante()
 
-
     End Sub
 #End Region
 
@@ -201,6 +200,48 @@ Public Class frm_Factura
               "Se perderán las ultimas modificaciones", _
               vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
 
+            grlGrillaa.Rows.Clear()
+            txtIdCliente.Text = ""
+            txtNombreCliente.Text = ""
+            txtApellido.Text = ""
+            txtDireccion.Text = ""
+            txtLocalidad.Text = ""
+            txtTelefono.Text = ""
+            txtEstado.Text = ""
+            txtIdProd.Text = ""
+            txtProducto.Text = ""
+            txtCantidad.Text = ""
+            txtPrecioUnidad.Text = ""
+            TextBox1.Text = ""
+            txtSubTotal.Text = ""
+            txtDescuento.Text = ""
+            txtTotal.Text = ""
+        End If
+    End Sub
+#End Region
+
+#Region "Limpair"
+    Private Sub cmdLimpiar_Click(sender As System.Object, e As System.EventArgs) Handles cmdLimpiar.Click
+        If MsgBox("Esta seguro de limpiar el formulario?" & vbCrLf & _
+      "Se perderán las ultimas modificaciones", _
+      vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+
+            grlGrillaa.Rows.Clear()
+            txtIdCliente.Text = ""
+            txtNombreCliente.Text = ""
+            txtApellido.Text = ""
+            txtDireccion.Text = ""
+            txtLocalidad.Text = ""
+            txtTelefono.Text = ""
+            txtEstado.Text = ""
+            txtIdProd.Text = ""
+            txtProducto.Text = ""
+            txtCantidad.Text = ""
+            txtPrecioUnidad.Text = ""
+            TextBox1.Text = ""
+            txtSubTotal.Text = ""
+            txtDescuento.Text = ""
+            txtTotal.Text = ""
         End If
     End Sub
 #End Region

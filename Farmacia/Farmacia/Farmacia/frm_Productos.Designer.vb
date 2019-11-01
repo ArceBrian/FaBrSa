@@ -85,6 +85,7 @@ Partial Class frm_Productos
         Me.grlGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grlGrilla.Location = New System.Drawing.Point(13, 41)
         Me.grlGrilla.Name = "grlGrilla"
+        Me.grlGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grlGrilla.Size = New System.Drawing.Size(879, 196)
         Me.grlGrilla.TabIndex = 0
         '
