@@ -61,19 +61,19 @@ Partial Class frm_Menu
         'RubrosToolStripMenuItem
         '
         Me.RubrosToolStripMenuItem.Name = "RubrosToolStripMenuItem"
-        Me.RubrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RubrosToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.RubrosToolStripMenuItem.Text = "Rubros"
         '
         'SubRubrosToolStripMenuItem
         '
         Me.SubRubrosToolStripMenuItem.Name = "SubRubrosToolStripMenuItem"
-        Me.SubRubrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SubRubrosToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.SubRubrosToolStripMenuItem.Text = "SubRubros"
         '
         'ProductosToolStripMenuItem1
         '
         Me.ProductosToolStripMenuItem1.Name = "ProductosToolStripMenuItem1"
-        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(131, 22)
         Me.ProductosToolStripMenuItem1.Text = "Productos"
         '
         'ClientesToolStripMenuItem
