@@ -144,11 +144,11 @@ Partial Class frm_Productos
         'lblAccion
         '
         Me.lblAccion.AutoSize = True
-        Me.lblAccion.Location = New System.Drawing.Point(7, 3)
+        Me.lblAccion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblAccion.Location = New System.Drawing.Point(0, 0)
         Me.lblAccion.Name = "lblAccion"
-        Me.lblAccion.Size = New System.Drawing.Size(39, 13)
+        Me.lblAccion.Size = New System.Drawing.Size(0, 13)
         Me.lblAccion.TabIndex = 0
-        Me.lblAccion.Text = "Label9"
         '
         'grb_Productos
         '

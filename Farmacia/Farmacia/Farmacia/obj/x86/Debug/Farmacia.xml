@@ -27,6 +27,18 @@ Farmacia
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Farmacia.My.Resources.Resources.Logo_tamaño_grande">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources.Logo_tamaño_grande_con_texto">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources.LogoFarmaEasy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Farmacia.My.Resources.Resources.unnamed">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

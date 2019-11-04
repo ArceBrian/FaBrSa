@@ -66,7 +66,8 @@ Partial Class frm_CargaCliente
         'lblAccion
         '
         Me.lblAccion.AutoSize = True
-        Me.lblAccion.Location = New System.Drawing.Point(10, 4)
+        Me.lblAccion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblAccion.Location = New System.Drawing.Point(0, 0)
         Me.lblAccion.Name = "lblAccion"
         Me.lblAccion.Size = New System.Drawing.Size(0, 13)
         Me.lblAccion.TabIndex = 0

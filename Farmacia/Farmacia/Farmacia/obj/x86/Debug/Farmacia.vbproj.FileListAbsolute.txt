@@ -123,3 +123,24 @@ C:\Users\FESSIA\Downloads\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug
 C:\Users\FESSIA\Downloads\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
 C:\Users\FESSIA\Downloads\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
 C:\Users\FESSIA\Downloads\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+C:\Users\brian\Documents\GitHub\Nueva carpeta (2)\Farmacia.exe.config
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.exe
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.xml
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.pdb
+C:\Users\brian\Documents\GitHub\Nueva carpeta (2)\Farmacia.exe
+C:\Users\brian\Documents\GitHub\Nueva carpeta (2)\Farmacia.pdb
+C:\Users\brian\Documents\GitHub\Nueva carpeta (2)\Farmacia.xml
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbprojResolveAssemblyReference.cache
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_NotaCredito.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CargaCliente.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_ClientesItem.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_CuentaCorriente.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Factura.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Menu.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Productos.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_ProductosItem.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Proveedores.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_Rubros.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
+C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache

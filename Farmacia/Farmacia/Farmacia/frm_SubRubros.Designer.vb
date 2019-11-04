@@ -205,11 +205,11 @@ Partial Class frm_SubRubros
         'lbl_Accion
         '
         Me.lbl_Accion.AutoSize = True
-        Me.lbl_Accion.Location = New System.Drawing.Point(3, 1)
+        Me.lbl_Accion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_Accion.Location = New System.Drawing.Point(0, 0)
         Me.lbl_Accion.Name = "lbl_Accion"
-        Me.lbl_Accion.Size = New System.Drawing.Size(39, 13)
+        Me.lbl_Accion.Size = New System.Drawing.Size(0, 13)
         Me.lbl_Accion.TabIndex = 0
-        Me.lbl_Accion.Text = "Label2"
         '
         'frm_SubRubros
         '

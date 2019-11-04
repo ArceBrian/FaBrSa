@@ -166,19 +166,20 @@ Partial Class frm_Rubros
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.lbl_Accion)
-        Me.Panel1.Location = New System.Drawing.Point(2, 384)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 385)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(422, 22)
+        Me.Panel1.Size = New System.Drawing.Size(424, 22)
         Me.Panel1.TabIndex = 25
         '
         'lbl_Accion
         '
         Me.lbl_Accion.AutoSize = True
-        Me.lbl_Accion.Location = New System.Drawing.Point(3, 1)
+        Me.lbl_Accion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_Accion.Location = New System.Drawing.Point(0, 0)
         Me.lbl_Accion.Name = "lbl_Accion"
-        Me.lbl_Accion.Size = New System.Drawing.Size(39, 13)
+        Me.lbl_Accion.Size = New System.Drawing.Size(0, 13)
         Me.lbl_Accion.TabIndex = 0
-        Me.lbl_Accion.Text = "Label1"
         '
         'frm_Rubros
         '

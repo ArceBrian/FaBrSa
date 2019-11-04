@@ -706,11 +706,11 @@ Partial Class frm_NotaCredito
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 9)
+        Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label10.Location = New System.Drawing.Point(0, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 13)
+        Me.Label10.Size = New System.Drawing.Size(0, 13)
         Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Label10"
         '
         'frm_NotaCredito
         '
@@ -727,7 +727,7 @@ Partial Class frm_NotaCredito
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "frm_NotaCredito"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Nota de Credito"
+        Me.Text = "Nota de credito"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

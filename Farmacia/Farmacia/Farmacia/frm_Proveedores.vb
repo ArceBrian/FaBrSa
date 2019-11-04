@@ -56,7 +56,7 @@ Public Class frm_Proveedores
                     txtLocalidad.Focus()
                     txtDireccion.Focus()
                     txtCargo.Focus()
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     lbl_Accion.Text = "Agregando"
                     lbl_Accion.ForeColor = Color.Black
 
@@ -68,7 +68,7 @@ Public Class frm_Proveedores
                     cmd_Cancelar.Enabled = True
                     DesHabililarComandos()
                     grl_Grilla.Enabled = False
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     lbl_Accion.Text = "Modificando"
                     lbl_Accion.ForeColor = Color.Black
 
@@ -303,4 +303,8 @@ Public Class frm_Proveedores
         Close()
     End Sub
 #End Region
+
+    Private Sub frm_Proveedores_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

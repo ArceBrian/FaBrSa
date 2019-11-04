@@ -43,7 +43,7 @@ Partial Class frm_Menu
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.GreenYellow
+        Me.MenuStrip1.BackColor = System.Drawing.Color.MediumAquamarine
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ItemsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -61,19 +61,19 @@ Partial Class frm_Menu
         'RubrosToolStripMenuItem
         '
         Me.RubrosToolStripMenuItem.Name = "RubrosToolStripMenuItem"
-        Me.RubrosToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.RubrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RubrosToolStripMenuItem.Text = "Rubros"
         '
         'SubRubrosToolStripMenuItem
         '
         Me.SubRubrosToolStripMenuItem.Name = "SubRubrosToolStripMenuItem"
-        Me.SubRubrosToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.SubRubrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SubRubrosToolStripMenuItem.Text = "SubRubros"
         '
         'ProductosToolStripMenuItem1
         '
         Me.ProductosToolStripMenuItem1.Name = "ProductosToolStripMenuItem1"
-        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(131, 22)
+        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ProductosToolStripMenuItem1.Text = "Productos"
         '
         'ClientesToolStripMenuItem
@@ -135,8 +135,8 @@ Partial Class frm_Menu
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel1.BackgroundImage = Global.Farmacia.My.Resources.Resources.unnamed
+        Me.Panel1.BackColor = System.Drawing.Color.CadetBlue
+        Me.Panel1.BackgroundImage = Global.Farmacia.My.Resources.Resources.Logo_tamaño_grande_con_texto
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
@@ -157,7 +157,7 @@ Partial Class frm_Menu
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_Menu"
-        Me.Text = "Menu"
+        Me.Text = "FarmaEasy"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

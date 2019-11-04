@@ -58,6 +58,8 @@ Partial Class frm_Factura
         Me.Button6 = New System.Windows.Forms.Button()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.Productos = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.cmdQuitar = New System.Windows.Forms.Button()
@@ -88,8 +90,6 @@ Partial Class frm_Factura
         Me.cmdLimpiar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Productos.SuspendLayout()
@@ -411,6 +411,24 @@ Partial Class frm_Factura
         Me.Productos.TabStop = False
         Me.Productos.Text = "Buscar productos"
         '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox2.Location = New System.Drawing.Point(85, 350)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(443, 42)
+        Me.TextBox2.TabIndex = 33
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(18, 353)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(63, 13)
+        Me.Label21.TabIndex = 32
+        Me.Label21.Text = "Descripción"
+        '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
@@ -695,29 +713,11 @@ Partial Class frm_Factura
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 9)
+        Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label10.Location = New System.Drawing.Point(0, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 13)
+        Me.Label10.Size = New System.Drawing.Size(0, 13)
         Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Label10"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(18, 353)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(63, 13)
-        Me.Label21.TabIndex = 32
-        Me.Label21.Text = "Descripción"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.Window
-        Me.TextBox2.Location = New System.Drawing.Point(85, 350)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(443, 42)
-        Me.TextBox2.TabIndex = 33
         '
         'frm_Factura
         '

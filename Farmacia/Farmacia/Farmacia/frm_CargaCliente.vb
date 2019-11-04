@@ -59,7 +59,7 @@ Public Class frm_CargaCliente
                     txtLocalidad.Focus()
                     txtTelefono.Focus()
                     txtEstado.Focus()
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     LblAccion.Text = "Agregando"
                     lblAccion.ForeColor = Color.Black
 
@@ -71,7 +71,7 @@ Public Class frm_CargaCliente
                     CmdCancelar.Enabled = True
                     DesHabililarComandos()
                     grlGrilla.Enabled = False
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     LblAccion.Text = "Modificando"
                     lblAccion.ForeColor = Color.Black
             End Select

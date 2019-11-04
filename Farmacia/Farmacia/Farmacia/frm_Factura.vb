@@ -96,7 +96,7 @@ Public Class frm_Factura
         cargarcboFacturas()
         CondicionesIva()
 
-        Panel1.BackColor = Color.GreenYellow
+        Panel1.BackColor = Color.MediumAquamarine
         Label10.Text = "Agregando"
         Label10.ForeColor = Color.Black
 
@@ -220,8 +220,8 @@ Public Class frm_Factura
     End Sub
 #End Region
 
-#Region "Limpair"
-    Private Sub cmdLimpiar_Click(sender As System.Object, e As System.EventArgs) Handles cmdLimpiar.Click
+#Region "Limpiar"
+    Private Sub cmdLimpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdLimpiar.Click
         If MsgBox("Esta seguro de limpiar el formulario?" & vbCrLf & _
       "Se perderán las ultimas modificaciones", _
       vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
@@ -246,4 +246,11 @@ Public Class frm_Factura
     End Sub
 #End Region
 
+    Private Sub Productos_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Productos.Enter
+
+    End Sub
+
+    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
 End Class

@@ -44,7 +44,8 @@ Partial Class frm_ProductosItem
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(0, 339)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 340)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(530, 27)
         Me.Panel1.TabIndex = 2
@@ -52,11 +53,11 @@ Partial Class frm_ProductosItem
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 4)
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(0, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
         '
         'txtFiltrar
         '
@@ -95,7 +96,7 @@ Partial Class frm_ProductosItem
         Me.Controls.Add(Me.grlGrilla1)
         Me.Name = "frm_ProductosItem"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Productos Item"
+        Me.Text = "Productos item"
         CType(Me.grlGrilla1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

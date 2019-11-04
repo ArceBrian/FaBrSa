@@ -97,7 +97,7 @@ Public Class frm_NotaCredito
         CondicionesIva()
         NumeroComprobante()
 
-        Panel1.BackColor = Color.GreenYellow
+        Panel1.BackColor = Color.MediumAquamarine
         Label10.Text = "Agregando"
         Label10.ForeColor = Color.Black
 
