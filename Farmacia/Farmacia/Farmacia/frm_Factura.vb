@@ -9,44 +9,9 @@ Public Class frm_Factura
         txtCantidad.Focus()
     End Sub
 
-#Region "Prueba NO VA"
-    '    Private Sub cmdAgregar_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregar.Click
-    '        Dim total As Double = 0
-    '        Dim fila As DataGridViewRow = New DataGridViewRow
-    '        Dim totalpagar As Double = 0
-    '        Dim descuento As Double = 0
-
-    '        Dim IdProducto As Double
-    '        Dim Producto As String
-    '        Dim cantidad As Double
-    '        Dim PrecioUnidad As Double
-
-    '        IdProducto = txtIdProd.Text
-    '        Producto = txtProducto.Text
-    '        cantidad = txtCantidad.Text
-    '        PrecioUnidad = txtPrecioUnidad.Text
-
-
-    '        total = Val(txtCantidad.Text) * Val(txtPrecioUnidad.Text)
-
-    '        Try
-    '            grlGrillaa.Rows.Add(IdProducto, Producto, cantidad, PrecioUnidad, total)
-
-
-    '            For Each fila In grlGrillaa.Rows
-    '                totalpagar += Convert.ToDouble(fila.Cells("total").Value)
-    '                totalpagar = totalpagar
-    '            Next
-    '            txtTotal.Text = totalpagar
-
-    '        Catch ex As Exception
-
-    '        End Try
-
-    '    End Sub
-#End Region
-
-
+    Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        frm_FacturasItems.ShowDialog()
+    End Sub
 
 #Region "Suma de prod"
     Private Sub cmdAgregar_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregar.Click
@@ -246,11 +211,4 @@ Public Class frm_Factura
     End Sub
 #End Region
 
-    Private Sub Productos_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Productos.Enter
-
-    End Sub
-
-    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
 End Class

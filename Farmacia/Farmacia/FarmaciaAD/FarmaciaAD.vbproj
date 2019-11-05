@@ -84,6 +84,7 @@
     <Compile Include="C_CuentaCorriente.vb" />
     <Compile Include="C_Factura.vb" />
     <Compile Include="C_FacturaDetalle.vb" />
+    <Compile Include="C_FacturasItems.vb" />
     <Compile Include="C_Productos.vb" />
     <Compile Include="C_ProductosItem.vb" />
     <Compile Include="C_Proveedores.vb" />

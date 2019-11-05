@@ -74,6 +74,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_FacturasItems.Designer.vb">
+      <DependentUpon>frm_FacturasItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FacturasItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_NotaCredito.Designer.vb">
       <DependentUpon>frm_NotaCredito.vb</DependentUpon>
     </Compile>
@@ -160,6 +166,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_FacturasItems.resx">
+      <DependentUpon>frm_FacturasItems.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_NotaCredito.resx">
       <DependentUpon>frm_NotaCredito.vb</DependentUpon>
     </EmbeddedResource>
