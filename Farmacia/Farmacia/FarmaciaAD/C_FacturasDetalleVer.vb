@@ -20,7 +20,8 @@ Public Class C_FacturasDetalleVer
 
 #Region "BuscarTodos"
     Public Function BuscarTodos() As DataSet
-        Return oDatabase.ExecuteDataSet("FacturasBuscarTodos")
+        Return oDatabase.ExecuteDataSet("FacturasBuscarTodo")
     End Function
 #End Region
+
 End Class
