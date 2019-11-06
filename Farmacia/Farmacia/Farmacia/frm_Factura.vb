@@ -10,7 +10,7 @@ Public Class frm_Factura
     End Sub
 
     Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        frm_FacturasItems.ShowDialog()
+        frm_FacturaDetalleVer.ShowDialog()
     End Sub
 
 #Region "Suma de prod"

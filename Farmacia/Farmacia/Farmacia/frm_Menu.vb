@@ -36,4 +36,8 @@
     Private Sub ClientesItemsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ClientesItemsToolStripMenuItem.Click
         frm_ClientesItem.Show()
     End Sub
+
+    Private Sub DetallesFacturasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles DetallesFacturasToolStripMenuItem.Click
+        frm_FacturaDetalleVer.Show()
+    End Sub
 End Class

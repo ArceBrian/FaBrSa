@@ -144,4 +144,4 @@ C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\
 C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
 C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
 C:\Users\brian\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
-C:\Users\FESSIA\Downloads\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_FacturasItems.resources
+C:\Users\FESSIA\Downloads\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_FacturaDetalleVer.resources

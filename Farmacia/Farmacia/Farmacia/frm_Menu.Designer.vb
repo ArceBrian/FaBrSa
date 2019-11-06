@@ -38,13 +38,14 @@ Partial Class frm_Menu
         Me.ProductosItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.DetallesFacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.MediumAquamarine
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ItemsToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ItemsToolStripMenuItem, Me.DetallesFacturasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(422, 24)
@@ -144,6 +145,12 @@ Partial Class frm_Menu
         Me.Panel1.Size = New System.Drawing.Size(422, 318)
         Me.Panel1.TabIndex = 2
         '
+        'DetallesFacturasToolStripMenuItem
+        '
+        Me.DetallesFacturasToolStripMenuItem.Name = "DetallesFacturasToolStripMenuItem"
+        Me.DetallesFacturasToolStripMenuItem.Size = New System.Drawing.Size(104, 20)
+        Me.DetallesFacturasToolStripMenuItem.Text = "DetallesFacturas"
+        '
         'frm_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -180,4 +187,5 @@ Partial Class frm_Menu
     Friend WithEvents ProductosToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClientesItemsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents DetallesFacturasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

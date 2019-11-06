@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 Imports System.IO
 Imports Microsoft.Practices.EnterpriseLibrary.Data
 
-Public Class C_FacturasItems
+Public Class C_FacturasDetalleVer
     Dim oDatabase As Database
 
     Public Sub New()
@@ -17,4 +17,10 @@ Public Class C_FacturasItems
 
     End Sub
 
+
+#Region "BuscarTodos"
+    Public Function BuscarTodos() As DataSet
+        Return oDatabase.ExecuteDataSet("FacturasBuscarTodos")
+    End Function
+#End Region
 End Class
