@@ -22,6 +22,7 @@ Partial Class frm_Rubros
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Rubros))
         Me.grl_Grilla = New System.Windows.Forms.DataGridView()
         Me.chk_Activo = New System.Windows.Forms.CheckBox()
         Me.lbl_Rubro = New System.Windows.Forms.Label()
@@ -79,18 +80,22 @@ Partial Class frm_Rubros
         '
         'cmd_Aceptar
         '
+        Me.cmd_Aceptar.Image = CType(resources.GetObject("cmd_Aceptar.Image"), System.Drawing.Image)
+        Me.cmd_Aceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmd_Aceptar.Location = New System.Drawing.Point(156, 26)
         Me.cmd_Aceptar.Name = "cmd_Aceptar"
-        Me.cmd_Aceptar.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_Aceptar.Size = New System.Drawing.Size(91, 23)
         Me.cmd_Aceptar.TabIndex = 11
         Me.cmd_Aceptar.Text = "Aceptar"
         Me.cmd_Aceptar.UseVisualStyleBackColor = True
         '
         'cmd_Cancelar
         '
+        Me.cmd_Cancelar.Image = CType(resources.GetObject("cmd_Cancelar.Image"), System.Drawing.Image)
+        Me.cmd_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmd_Cancelar.Location = New System.Drawing.Point(156, 55)
         Me.cmd_Cancelar.Name = "cmd_Cancelar"
-        Me.cmd_Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_Cancelar.Size = New System.Drawing.Size(91, 23)
         Me.cmd_Cancelar.TabIndex = 10
         Me.cmd_Cancelar.Text = "Cancelar"
         Me.cmd_Cancelar.UseVisualStyleBackColor = True
@@ -158,7 +163,7 @@ Partial Class frm_Rubros
         Me.GroupBox1.Controls.Add(Me.txt_ID)
         Me.GroupBox1.Location = New System.Drawing.Point(69, 207)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(246, 103)
+        Me.GroupBox1.Size = New System.Drawing.Size(253, 103)
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingrese datos"

@@ -120,7 +120,7 @@ Public Class frm_Factura
     Private Sub txtCantidad_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtCantidad.TextChanged
 
         If Len(txtCantidad.Text) > 0 Then
-            txtCantidad.BackColor = Color.GreenYellow
+            txtCantidad.BackColor = Color.Aquamarine
         Else
             txtCantidad.BackColor = Color.White
         End If
