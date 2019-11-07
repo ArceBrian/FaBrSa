@@ -141,7 +141,7 @@ Public Class frm_Factura
 
             'PARA FECHA ES .VALUE.DATE
 
-            resultado = oFactura.AgregarFactura(cboCondicion.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date, txtTotal.Text)
+        resultado = oFactura.AgregarFactura(cboTipoFact.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date, txtTotal.Text)
 
 
             For i = 0 To grlGrillaa.Rows.Count - 2

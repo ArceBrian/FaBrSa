@@ -20,7 +20,23 @@ Public Class C_FacturasDetalleVer
 
 #Region "BuscarTodos"
     Public Function BuscarTodos() As DataSet
-        Return oDatabase.ExecuteDataSet("FacturasBuscarTodo")
+        Try
+            Return oDatabase.ExecuteDataSet("FacturasBuscarTodos")
+        Catch ex As System.Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "BuscarPorID"
+    Public Function BuscarPorId(ByVal IdFactura As Integer) As DataSet
+        Return oDatabase.ExecuteDataSet("FacturasBuscarPorId", IdFactura)
+    End Function
+#End Region
+
+#Region "FiltrarDatos"
+    Public Function FiltrarDatos(ByVal NombreCliente As String) As DataSet
+        Return oDatabase.ExecuteDataSet("FacturasFiltrarDatos", NombreCliente)
     End Function
 #End Region
 

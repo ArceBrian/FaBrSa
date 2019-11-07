@@ -134,6 +134,7 @@ Public Class frm_CargaCliente
         txtLocalidad.Text = oDs.Tables(0).Rows(0).Item("Localidad")
         txtTelefono.Text = oDs.Tables(0).Rows(0).Item("Telefono")
         txtEstado.Text = oDs.Tables(0).Rows(0).Item("IdEstado")
+
         oDs = Nothing
         oFarmacia = Nothing
 
@@ -252,10 +253,8 @@ Public Class frm_CargaCliente
 
 #Region "Grilla"
     Private Sub grl_Grilla_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlGrilla.CellContentClick
-
         BuscarPorID(grlGrilla.CurrentRow.Cells(0).Value)
         cmdModificar.Enabled = True
-
     End Sub
 #End Region
 

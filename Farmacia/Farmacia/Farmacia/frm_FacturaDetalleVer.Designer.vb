@@ -22,34 +22,51 @@ Partial Class frm_FacturaDetalleVer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_FacturaDetalleVer))
         Me.txtFiltrar = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.grlFacturas = New System.Windows.Forms.DataGridView()
-        Me.grlDetalleFactura = New System.Windows.Forms.DataGridView()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.grlFacturas, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.grlDetalleFactura, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtFiltrar
         '
+        Me.txtFiltrar.AccessibleDescription = ""
+        Me.txtFiltrar.AccessibleName = ""
         Me.txtFiltrar.Location = New System.Drawing.Point(12, 12)
         Me.txtFiltrar.Name = "txtFiltrar"
-        Me.txtFiltrar.Size = New System.Drawing.Size(505, 20)
+        Me.txtFiltrar.Size = New System.Drawing.Size(230, 20)
         Me.txtFiltrar.TabIndex = 8
+        Me.txtFiltrar.Tag = ""
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 490)
+        Me.Panel1.Location = New System.Drawing.Point(0, 457)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(530, 27)
+        Me.Panel1.Size = New System.Drawing.Size(751, 27)
         Me.Panel1.TabIndex = 7
         '
         'Label2
@@ -72,57 +89,172 @@ Partial Class frm_FacturaDetalleVer
         '
         'grlFacturas
         '
+        Me.grlFacturas.BackgroundColor = System.Drawing.SystemColors.Control
         Me.grlFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grlFacturas.Location = New System.Drawing.Point(12, 59)
+        Me.grlFacturas.Location = New System.Drawing.Point(6, 19)
         Me.grlFacturas.Name = "grlFacturas"
         Me.grlFacturas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlFacturas.Size = New System.Drawing.Size(505, 197)
+        Me.grlFacturas.Size = New System.Drawing.Size(715, 146)
         Me.grlFacturas.TabIndex = 6
         '
-        'grlDetalleFactura
+        'GroupBox1
         '
-        Me.grlDetalleFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grlDetalleFactura.Location = New System.Drawing.Point(12, 287)
-        Me.grlDetalleFactura.Name = "grlDetalleFactura"
-        Me.grlDetalleFactura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlDetalleFactura.Size = New System.Drawing.Size(505, 197)
-        Me.grlDetalleFactura.TabIndex = 10
+        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Enabled = False
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 267)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(727, 177)
+        Me.GroupBox1.TabIndex = 13
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Detalles de la factura"
         '
-        'Label3
+        'TextBox6
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 271)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(107, 13)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "Detalles de la factura"
+        Me.TextBox6.Location = New System.Drawing.Point(453, 103)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox6.TabIndex = 9
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(453, 70)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox5.TabIndex = 9
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(453, 38)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox4.TabIndex = 8
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(202, 103)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox3.TabIndex = 7
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(202, 74)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox2.TabIndex = 6
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(202, 42)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(156, 20)
+        Me.TextBox1.TabIndex = 5
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(416, 103)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(31, 13)
+        Me.Label8.TabIndex = 4
+        Me.Label8.Text = "Total"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(398, 41)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(49, 13)
+        Me.Label7.TabIndex = 3
+        Me.Label7.Text = "Cantidad"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(373, 70)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(74, 13)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "Precio unitario"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(146, 106)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(50, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Producto"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 43)
+        Me.Label4.Location = New System.Drawing.Point(144, 74)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(48, 13)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Facturas"
+        Me.Label4.Size = New System.Drawing.Size(52, 13)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Id factura"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(110, 45)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(86, 13)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Id factura detalle"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.grlFacturas)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 74)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(727, 177)
+        Me.GroupBox2.TabIndex = 14
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Facturas"
+        '
+        'Button1
+        '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(248, 9)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(147, 23)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Buscar por nombre"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'frm_FacturaDetalleVer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(530, 517)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.grlDetalleFactura)
+        Me.ClientSize = New System.Drawing.Size(751, 484)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtFiltrar)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.grlFacturas)
         Me.Name = "frm_FacturaDetalleVer"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Detalles de Facturas"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.grlFacturas, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.grlDetalleFactura, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -132,7 +264,19 @@ Partial Class frm_FacturaDetalleVer
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Public WithEvents grlFacturas As System.Windows.Forms.DataGridView
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Public WithEvents grlDetalleFactura As System.Windows.Forms.DataGridView
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
