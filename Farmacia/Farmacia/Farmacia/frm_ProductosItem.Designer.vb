@@ -22,6 +22,7 @@ Partial Class frm_ProductosItem
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_ProductosItem))
         Me.grlGrilla1 = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -68,9 +69,11 @@ Partial Class frm_ProductosItem
         '
         'cmdFiltrarD
         '
+        Me.cmdFiltrarD.Image = CType(resources.GetObject("cmdFiltrarD.Image"), System.Drawing.Image)
+        Me.cmdFiltrarD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdFiltrarD.Location = New System.Drawing.Point(173, 10)
         Me.cmdFiltrarD.Name = "cmdFiltrarD"
-        Me.cmdFiltrarD.Size = New System.Drawing.Size(125, 23)
+        Me.cmdFiltrarD.Size = New System.Drawing.Size(116, 23)
         Me.cmdFiltrarD.TabIndex = 4
         Me.cmdFiltrarD.Text = "Buscar"
         Me.cmdFiltrarD.UseVisualStyleBackColor = True

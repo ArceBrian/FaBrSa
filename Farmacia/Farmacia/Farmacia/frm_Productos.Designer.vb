@@ -22,6 +22,7 @@ Partial Class frm_Productos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Productos))
         Me.grlGrilla = New System.Windows.Forms.DataGridView()
         Me.txtFiltrar = New System.Windows.Forms.TextBox()
         Me.cmdFiltrarProd = New System.Windows.Forms.Button()
@@ -98,6 +99,8 @@ Partial Class frm_Productos
         '
         'cmdFiltrarProd
         '
+        Me.cmdFiltrarProd.Image = CType(resources.GetObject("cmdFiltrarProd.Image"), System.Drawing.Image)
+        Me.cmdFiltrarProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdFiltrarProd.Location = New System.Drawing.Point(119, 11)
         Me.cmdFiltrarProd.Name = "cmdFiltrarProd"
         Me.cmdFiltrarProd.Size = New System.Drawing.Size(75, 23)
@@ -445,18 +448,22 @@ Partial Class frm_Productos
         '
         'cmdCancelar
         '
-        Me.cmdCancelar.Location = New System.Drawing.Point(575, 254)
+        Me.cmdCancelar.Image = CType(resources.GetObject("cmdCancelar.Image"), System.Drawing.Image)
+        Me.cmdCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdCancelar.Location = New System.Drawing.Point(566, 254)
         Me.cmdCancelar.Name = "cmdCancelar"
-        Me.cmdCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdCancelar.Size = New System.Drawing.Size(84, 23)
         Me.cmdCancelar.TabIndex = 17
         Me.cmdCancelar.Text = "Cancelar"
         Me.cmdCancelar.UseVisualStyleBackColor = True
         '
         'cmdAceptar
         '
-        Me.cmdAceptar.Location = New System.Drawing.Point(494, 254)
+        Me.cmdAceptar.Image = CType(resources.GetObject("cmdAceptar.Image"), System.Drawing.Image)
+        Me.cmdAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdAceptar.Location = New System.Drawing.Point(476, 254)
         Me.cmdAceptar.Name = "cmdAceptar"
-        Me.cmdAceptar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAceptar.Size = New System.Drawing.Size(84, 23)
         Me.cmdAceptar.TabIndex = 16
         Me.cmdAceptar.Text = "Aceptar"
         Me.cmdAceptar.UseVisualStyleBackColor = True

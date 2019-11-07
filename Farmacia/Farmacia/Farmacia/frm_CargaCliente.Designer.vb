@@ -172,9 +172,11 @@ Partial Class frm_CargaCliente
         'cmdCancelar
         '
         Me.cmdCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCancelar.Image = CType(resources.GetObject("cmdCancelar.Image"), System.Drawing.Image)
+        Me.cmdCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdCancelar.Location = New System.Drawing.Point(190, 163)
         Me.cmdCancelar.Name = "cmdCancelar"
-        Me.cmdCancelar.Size = New System.Drawing.Size(121, 23)
+        Me.cmdCancelar.Size = New System.Drawing.Size(92, 23)
         Me.cmdCancelar.TabIndex = 18
         Me.cmdCancelar.Text = "Cancelar"
         Me.cmdCancelar.UseVisualStyleBackColor = True
@@ -202,9 +204,11 @@ Partial Class frm_CargaCliente
         'cmdAceptar
         '
         Me.cmdAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAceptar.Image = CType(resources.GetObject("cmdAceptar.Image"), System.Drawing.Image)
+        Me.cmdAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdAceptar.Location = New System.Drawing.Point(190, 134)
         Me.cmdAceptar.Name = "cmdAceptar"
-        Me.cmdAceptar.Size = New System.Drawing.Size(121, 23)
+        Me.cmdAceptar.Size = New System.Drawing.Size(92, 23)
         Me.cmdAceptar.TabIndex = 17
         Me.cmdAceptar.Text = "Aceptar"
         Me.cmdAceptar.UseVisualStyleBackColor = True
