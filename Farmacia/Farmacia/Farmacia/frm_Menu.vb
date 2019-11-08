@@ -10,7 +10,6 @@
         frm_CargaCliente.Show()
     End Sub
     Private Sub ComprasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComprasToolStripMenuItem.Click
-
     End Sub
 
     Private Sub ProveedoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedoresToolStripMenuItem.Click
@@ -25,16 +24,8 @@
         frm_CuentaCorriente.Show()
     End Sub
 
-    Private Sub ProductosItemsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosItemsToolStripMenuItem.Click
-        frm_ProductosItem.Show()
-    End Sub
-
     Private Sub ProductosToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem1.Click
         frm_Productos.Show()
-    End Sub
-
-    Private Sub ClientesItemsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ClientesItemsToolStripMenuItem.Click
-        frm_ClientesItem.Show()
     End Sub
 
     Private Sub DetallesFacturasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles DetallesFacturasToolStripMenuItem.Click
