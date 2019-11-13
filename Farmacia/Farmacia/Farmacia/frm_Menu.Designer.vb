@@ -34,16 +34,15 @@ Partial Class frm_Menu
         Me.CuentaCorrienteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProductosItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClientesItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DetallesFacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.YellowGreen
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ItemsToolStripMenuItem})
+        Me.MenuStrip1.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.DetallesFacturasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(422, 24)
@@ -113,36 +112,37 @@ Partial Class frm_Menu
         Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
-        'ItemsToolStripMenuItem
+        'DetallesFacturasToolStripMenuItem
         '
-        Me.ItemsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosItemsToolStripMenuItem, Me.ClientesItemsToolStripMenuItem})
-        Me.ItemsToolStripMenuItem.Name = "ItemsToolStripMenuItem"
-        Me.ItemsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
-        Me.ItemsToolStripMenuItem.Text = "Items"
+        Me.DetallesFacturasToolStripMenuItem.Name = "DetallesFacturasToolStripMenuItem"
+        Me.DetallesFacturasToolStripMenuItem.Size = New System.Drawing.Size(104, 20)
+        Me.DetallesFacturasToolStripMenuItem.Text = "DetallesFacturas"
         '
-        'ProductosItemsToolStripMenuItem
+        'Panel1
         '
-        Me.ProductosItemsToolStripMenuItem.Name = "ProductosItemsToolStripMenuItem"
-        Me.ProductosItemsToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.ProductosItemsToolStripMenuItem.Text = "Productos Items"
-        '
-        'ClientesItemsToolStripMenuItem
-        '
-        Me.ClientesItemsToolStripMenuItem.Name = "ClientesItemsToolStripMenuItem"
-        Me.ClientesItemsToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.ClientesItemsToolStripMenuItem.Text = "Clientes Items"
+        Me.Panel1.BackColor = System.Drawing.Color.CadetBlue
+        Me.Panel1.BackgroundImage = Global.Farmacia.My.Resources.Resources.Logo_tamaño_grande_con_texto
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(422, 318)
+        Me.Panel1.TabIndex = 2
         '
         'frm_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackgroundImage = Global.Farmacia.My.Resources.Resources._314252
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(422, 272)
+        Me.ClientSize = New System.Drawing.Size(422, 342)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_Menu"
-        Me.Text = "Menu"
+        Me.Text = "FarmaEasy"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -160,8 +160,7 @@ Partial Class frm_Menu
     Friend WithEvents ComprasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProveedoresToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CuentaCorrienteToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ItemsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ProductosItemsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ClientesItemsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents DetallesFacturasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -22,7 +22,6 @@ Public Class frm_CargaCliente
 
 #Region "Propiedades"
 
-
     Public Property Estado() As EstadodelFormulario
         Get
             Return eEstado
@@ -60,7 +59,7 @@ Public Class frm_CargaCliente
                     txtLocalidad.Focus()
                     txtTelefono.Focus()
                     txtEstado.Focus()
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     LblAccion.Text = "Agregando"
                     lblAccion.ForeColor = Color.Black
 
@@ -72,7 +71,7 @@ Public Class frm_CargaCliente
                     CmdCancelar.Enabled = True
                     DesHabililarComandos()
                     grlGrilla.Enabled = False
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     LblAccion.Text = "Modificando"
                     lblAccion.ForeColor = Color.Black
             End Select
@@ -135,6 +134,7 @@ Public Class frm_CargaCliente
         txtLocalidad.Text = oDs.Tables(0).Rows(0).Item("Localidad")
         txtTelefono.Text = oDs.Tables(0).Rows(0).Item("Telefono")
         txtEstado.Text = oDs.Tables(0).Rows(0).Item("IdEstado")
+
         oDs = Nothing
         oFarmacia = Nothing
 
@@ -242,7 +242,6 @@ Public Class frm_CargaCliente
 
         End If
 
-
         Exit Sub
     End Sub
 
@@ -254,10 +253,8 @@ Public Class frm_CargaCliente
 
 #Region "Grilla"
     Private Sub grl_Grilla_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlGrilla.CellContentClick
-
         BuscarPorID(grlGrilla.CurrentRow.Cells(0).Value)
         cmdModificar.Enabled = True
-
     End Sub
 #End Region
 

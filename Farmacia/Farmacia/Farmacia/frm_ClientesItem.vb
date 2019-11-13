@@ -26,7 +26,7 @@ Public Class frm_ClientesItem
                 Case EstadodelFormulario.eConsulta
                     Limpiar()
                     grlGrilla1.Enabled = True
-                    Panel1.BackColor = Color.White
+                    Panel1.BackColor = Color.MediumAquamarine
                     Label1.Text = "Consultando"
                     Label1.ForeColor = Color.Black
             End Select

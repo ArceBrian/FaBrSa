@@ -22,6 +22,7 @@ Partial Class frm_SubRubros
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_SubRubros))
         Me.chk_Activo = New System.Windows.Forms.CheckBox()
         Me.lbl_Rubro = New System.Windows.Forms.Label()
         Me.cmd_Aceptar = New System.Windows.Forms.Button()
@@ -66,18 +67,22 @@ Partial Class frm_SubRubros
         '
         'cmd_Aceptar
         '
+        Me.cmd_Aceptar.Image = CType(resources.GetObject("cmd_Aceptar.Image"), System.Drawing.Image)
+        Me.cmd_Aceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmd_Aceptar.Location = New System.Drawing.Point(165, 45)
         Me.cmd_Aceptar.Name = "cmd_Aceptar"
-        Me.cmd_Aceptar.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_Aceptar.Size = New System.Drawing.Size(88, 23)
         Me.cmd_Aceptar.TabIndex = 17
         Me.cmd_Aceptar.Text = "Aceptar"
         Me.cmd_Aceptar.UseVisualStyleBackColor = True
         '
         'cmd_Cancelar
         '
+        Me.cmd_Cancelar.Image = CType(resources.GetObject("cmd_Cancelar.Image"), System.Drawing.Image)
+        Me.cmd_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmd_Cancelar.Location = New System.Drawing.Point(165, 73)
         Me.cmd_Cancelar.Name = "cmd_Cancelar"
-        Me.cmd_Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_Cancelar.Size = New System.Drawing.Size(88, 23)
         Me.cmd_Cancelar.TabIndex = 16
         Me.cmd_Cancelar.Text = "Cancelar"
         Me.cmd_Cancelar.UseVisualStyleBackColor = True
@@ -189,7 +194,7 @@ Partial Class frm_SubRubros
         Me.GroupBox1.Controls.Add(Me.lbl_SubRubro)
         Me.GroupBox1.Location = New System.Drawing.Point(82, 206)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(254, 127)
+        Me.GroupBox1.Size = New System.Drawing.Size(259, 127)
         Me.GroupBox1.TabIndex = 35
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingrese datos"
@@ -205,11 +210,11 @@ Partial Class frm_SubRubros
         'lbl_Accion
         '
         Me.lbl_Accion.AutoSize = True
-        Me.lbl_Accion.Location = New System.Drawing.Point(3, 1)
+        Me.lbl_Accion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_Accion.Location = New System.Drawing.Point(0, 0)
         Me.lbl_Accion.Name = "lbl_Accion"
-        Me.lbl_Accion.Size = New System.Drawing.Size(39, 13)
+        Me.lbl_Accion.Size = New System.Drawing.Size(0, 13)
         Me.lbl_Accion.TabIndex = 0
-        Me.lbl_Accion.Text = "Label2"
         '
         'frm_SubRubros
         '

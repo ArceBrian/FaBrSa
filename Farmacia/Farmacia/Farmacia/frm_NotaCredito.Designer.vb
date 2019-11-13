@@ -22,6 +22,7 @@ Partial Class frm_NotaCredito
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_NotaCredito))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -120,11 +121,11 @@ Partial Class frm_NotaCredito
         '
         'Button1
         '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.Location = New System.Drawing.Point(155, 19)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(42, 23)
         Me.Button1.TabIndex = 20
-        Me.Button1.Text = "..."
         Me.Button1.UseVisualStyleBackColor = True
         '
         'txtIdFactura
@@ -359,11 +360,11 @@ Partial Class frm_NotaCredito
         '
         'Button6
         '
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
         Me.Button6.Location = New System.Drawing.Point(193, 19)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(42, 23)
         Me.Button6.TabIndex = 12
-        Me.Button6.Text = "..."
         Me.Button6.UseVisualStyleBackColor = True
         '
         'txtIdCliente
@@ -501,11 +502,11 @@ Partial Class frm_NotaCredito
         '
         'cmdBuscar
         '
+        Me.cmdBuscar.Image = CType(resources.GetObject("cmdBuscar.Image"), System.Drawing.Image)
         Me.cmdBuscar.Location = New System.Drawing.Point(343, 18)
         Me.cmdBuscar.Name = "cmdBuscar"
         Me.cmdBuscar.Size = New System.Drawing.Size(42, 23)
         Me.cmdBuscar.TabIndex = 19
-        Me.cmdBuscar.Text = "..."
         Me.cmdBuscar.UseVisualStyleBackColor = True
         '
         'Label14
@@ -705,11 +706,11 @@ Partial Class frm_NotaCredito
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 9)
+        Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label10.Location = New System.Drawing.Point(0, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 13)
+        Me.Label10.Size = New System.Drawing.Size(0, 13)
         Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Label10"
         '
         'frm_NotaCredito
         '
@@ -726,7 +727,7 @@ Partial Class frm_NotaCredito
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "frm_NotaCredito"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Nota de Credito"
+        Me.Text = "Nota de credito"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

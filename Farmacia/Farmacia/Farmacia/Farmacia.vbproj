@@ -74,6 +74,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_FacturaDetalleVer.Designer.vb">
+      <DependentUpon>frm_FacturaDetalleVer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FacturaDetalleVer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_NotaCredito.Designer.vb">
       <DependentUpon>frm_NotaCredito.vb</DependentUpon>
     </Compile>
@@ -160,6 +166,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_FacturaDetalleVer.resx">
+      <DependentUpon>frm_FacturaDetalleVer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_NotaCredito.resx">
       <DependentUpon>frm_NotaCredito.vb</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +226,27 @@
       <Project>{B7ADB3B4-B25E-4C77-9D46-73B4C4408421}</Project>
       <Name>FarmaciaAD</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64673.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-azul-claro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314252.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo tamaño grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoFarmaEasy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo tamaño grande con texto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

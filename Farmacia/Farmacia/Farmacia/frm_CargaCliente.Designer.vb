@@ -22,6 +22,7 @@ Partial Class frm_CargaCliente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_CargaCliente))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblAccion = New System.Windows.Forms.Label()
         Me.cmdSalir = New System.Windows.Forms.Button()
@@ -65,7 +66,8 @@ Partial Class frm_CargaCliente
         'lblAccion
         '
         Me.lblAccion.AutoSize = True
-        Me.lblAccion.Location = New System.Drawing.Point(10, 4)
+        Me.lblAccion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblAccion.Location = New System.Drawing.Point(0, 0)
         Me.lblAccion.Name = "lblAccion"
         Me.lblAccion.Size = New System.Drawing.Size(0, 13)
         Me.lblAccion.TabIndex = 0
@@ -170,9 +172,11 @@ Partial Class frm_CargaCliente
         'cmdCancelar
         '
         Me.cmdCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCancelar.Image = CType(resources.GetObject("cmdCancelar.Image"), System.Drawing.Image)
+        Me.cmdCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdCancelar.Location = New System.Drawing.Point(190, 163)
         Me.cmdCancelar.Name = "cmdCancelar"
-        Me.cmdCancelar.Size = New System.Drawing.Size(121, 23)
+        Me.cmdCancelar.Size = New System.Drawing.Size(92, 23)
         Me.cmdCancelar.TabIndex = 18
         Me.cmdCancelar.Text = "Cancelar"
         Me.cmdCancelar.UseVisualStyleBackColor = True
@@ -200,9 +204,11 @@ Partial Class frm_CargaCliente
         'cmdAceptar
         '
         Me.cmdAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAceptar.Image = CType(resources.GetObject("cmdAceptar.Image"), System.Drawing.Image)
+        Me.cmdAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdAceptar.Location = New System.Drawing.Point(190, 134)
         Me.cmdAceptar.Name = "cmdAceptar"
-        Me.cmdAceptar.Size = New System.Drawing.Size(121, 23)
+        Me.cmdAceptar.Size = New System.Drawing.Size(92, 23)
         Me.cmdAceptar.TabIndex = 17
         Me.cmdAceptar.Text = "Aceptar"
         Me.cmdAceptar.UseVisualStyleBackColor = True
@@ -291,6 +297,8 @@ Partial Class frm_CargaCliente
         '
         'cmdBuscar
         '
+        Me.cmdBuscar.Image = CType(resources.GetObject("cmdBuscar.Image"), System.Drawing.Image)
+        Me.cmdBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdBuscar.Location = New System.Drawing.Point(235, 6)
         Me.cmdBuscar.Name = "cmdBuscar"
         Me.cmdBuscar.Size = New System.Drawing.Size(121, 23)
@@ -314,7 +322,7 @@ Partial Class frm_CargaCliente
         Me.Controls.Add(Me.cmdAgregar)
         Me.Name = "frm_CargaCliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "CargaCliente"
+        Me.Text = "Carga de cliente"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.grpCliente.ResumeLayout(False)

@@ -15,6 +15,34 @@ Farmacia
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Farmacia.My.Resources.Resources._314252">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources._64673">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources.fondo_azul_claro">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources.Logo_tamaño_grande">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources.Logo_tamaño_grande_con_texto">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources.LogoFarmaEasy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Farmacia.My.Resources.Resources.unnamed">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:Farmacia.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.

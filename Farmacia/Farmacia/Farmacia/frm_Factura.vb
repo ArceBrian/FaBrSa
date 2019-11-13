@@ -9,44 +9,9 @@ Public Class frm_Factura
         txtCantidad.Focus()
     End Sub
 
-#Region "Prueba NO VA"
-    '    Private Sub cmdAgregar_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregar.Click
-    '        Dim total As Double = 0
-    '        Dim fila As DataGridViewRow = New DataGridViewRow
-    '        Dim totalpagar As Double = 0
-    '        Dim descuento As Double = 0
-
-    '        Dim IdProducto As Double
-    '        Dim Producto As String
-    '        Dim cantidad As Double
-    '        Dim PrecioUnidad As Double
-
-    '        IdProducto = txtIdProd.Text
-    '        Producto = txtProducto.Text
-    '        cantidad = txtCantidad.Text
-    '        PrecioUnidad = txtPrecioUnidad.Text
-
-
-    '        total = Val(txtCantidad.Text) * Val(txtPrecioUnidad.Text)
-
-    '        Try
-    '            grlGrillaa.Rows.Add(IdProducto, Producto, cantidad, PrecioUnidad, total)
-
-
-    '            For Each fila In grlGrillaa.Rows
-    '                totalpagar += Convert.ToDouble(fila.Cells("total").Value)
-    '                totalpagar = totalpagar
-    '            Next
-    '            txtTotal.Text = totalpagar
-
-    '        Catch ex As Exception
-
-    '        End Try
-
-    '    End Sub
-#End Region
-
-
+    Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        frm_FacturaDetalleVer.ShowDialog()
+    End Sub
 
 #Region "Suma de prod"
     Private Sub cmdAgregar_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregar.Click
@@ -96,7 +61,7 @@ Public Class frm_Factura
         cargarcboFacturas()
         CondicionesIva()
 
-        Panel1.BackColor = Color.GreenYellow
+        Panel1.BackColor = Color.MediumAquamarine
         Label10.Text = "Agregando"
         Label10.ForeColor = Color.Black
 
@@ -105,6 +70,8 @@ Public Class frm_Factura
 
         txtPuntoVenta.Text = String.Format("{0:0000}", Punto)
         txtNroComp.Text = String.Format("{0:000000}", Nro)
+
+        NumeroComprobante()
 
     End Sub
 #End Region
@@ -143,9 +110,9 @@ Public Class frm_Factura
         Dim ods As New DataSet
         Dim oFactura As New C_Factura
 
-        ods = oFactura.NumeroComprobante(cboTipoFact.Text, txtPuntoVenta.Text)
+        ods = oFactura.NumeroComprobante
 
-        txtNroComp.Text = ods.Tables(0).Rows(0).Item("Numero").ToString.PadLeft(8, "0")
+        txtNroComp.Text = ods.Tables(0).Rows(0).Item("IdFactura")
     End Sub
 #End Region
 
@@ -153,7 +120,7 @@ Public Class frm_Factura
     Private Sub txtCantidad_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtCantidad.TextChanged
 
         If Len(txtCantidad.Text) > 0 Then
-            txtCantidad.BackColor = Color.GreenYellow
+            txtCantidad.BackColor = Color.Aquamarine
         Else
             txtCantidad.BackColor = Color.White
         End If
@@ -167,28 +134,80 @@ Public Class frm_Factura
         txtNroComp.Text = Nro.ToString("D5") 'Numero Comprobante
 
 
+            Dim oFactura As New C_Factura
+            Dim oFacturaDetalle As New C_FacturaDetalle
+            Dim oProducto As New C_Productos
+            Dim resultado As Integer
 
-        Dim oFactura As New C_Factura
-        Dim oFacturaDetalle As New C_FacturaDetalle
-        Dim oProducto As New C_Productos
-        Dim resultado As Integer
+            'PARA FECHA ES .VALUE.DATE
 
-        'PARA FECHA ES .VALUE.DATE
-
-        resultado = oFactura.AgregarFactura(cboCondicion.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date, txtTotal.Text)
-
-
-        For i = 0 To grlGrillaa.Rows.Count - 2
-
-            oFacturaDetalle.AgregarFacturaDetalle(resultado, grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value, grlGrillaa.Rows(i).Cells(3).Value, grlGrillaa.Rows(i).Cells(4).Value)
-
-            oProducto.RestarStock(grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value)
-
-        Next
+        resultado = oFactura.AgregarFactura(cboTipoFact.SelectedValue, txtPuntoVenta.Text, txtNroComp.Text, txtIdCliente.Text, DateTimePicker1.Value.Date, txtTotal.Text)
 
 
+            For i = 0 To grlGrillaa.Rows.Count - 2
+
+                oFacturaDetalle.AgregarFacturaDetalle(resultado, grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value, grlGrillaa.Rows(i).Cells(3).Value, grlGrillaa.Rows(i).Cells(4).Value)
+
+                oProducto.RestarStock(grlGrillaa.Rows(i).Cells(0).Value, grlGrillaa.Rows(i).Cells(2).Value)
+
+            Next
+
+        MsgBox("Se realizó la factura exitosamente!")
 
 
+
+    End Sub
+#End Region
+
+#Region "Cancelar"
+    Private Sub cmdCancelar_Click(sender As System.Object, e As System.EventArgs) Handles cmdCancelar.Click
+        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
+              "Se perderán las ultimas modificaciones", _
+              vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+
+            grlGrillaa.Rows.Clear()
+            txtIdCliente.Text = ""
+            txtNombreCliente.Text = ""
+            txtApellido.Text = ""
+            txtDireccion.Text = ""
+            txtLocalidad.Text = ""
+            txtTelefono.Text = ""
+            txtEstado.Text = ""
+            txtIdProd.Text = ""
+            txtProducto.Text = ""
+            txtCantidad.Text = ""
+            txtPrecioUnidad.Text = ""
+            TextBox1.Text = ""
+            txtSubTotal.Text = ""
+            txtDescuento.Text = ""
+            txtTotal.Text = ""
+        End If
+    End Sub
+#End Region
+
+#Region "Limpiar"
+    Private Sub cmdLimpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdLimpiar.Click
+        If MsgBox("Esta seguro de limpiar el formulario?" & vbCrLf & _
+      "Se perderán las ultimas modificaciones", _
+      vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+
+            grlGrillaa.Rows.Clear()
+            txtIdCliente.Text = ""
+            txtNombreCliente.Text = ""
+            txtApellido.Text = ""
+            txtDireccion.Text = ""
+            txtLocalidad.Text = ""
+            txtTelefono.Text = ""
+            txtEstado.Text = ""
+            txtIdProd.Text = ""
+            txtProducto.Text = ""
+            txtCantidad.Text = ""
+            txtPrecioUnidad.Text = ""
+            TextBox1.Text = ""
+            txtSubTotal.Text = ""
+            txtDescuento.Text = ""
+            txtTotal.Text = ""
+        End If
     End Sub
 #End Region
 

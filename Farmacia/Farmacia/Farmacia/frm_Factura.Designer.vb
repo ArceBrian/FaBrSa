@@ -22,11 +22,15 @@ Partial Class frm_Factura
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Factura))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtIdFactura = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
         Me.cboCondicion = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -83,12 +87,9 @@ Partial Class frm_Factura
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.cmdLimpiar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.txtIdFactura = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Productos.SuspendLayout()
@@ -117,6 +118,32 @@ Partial Class frm_Factura
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Fatura"
+        '
+        'Button1
+        '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(155, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(42, 23)
+        Me.Button1.TabIndex = 20
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txtIdFactura
+        '
+        Me.txtIdFactura.Enabled = False
+        Me.txtIdFactura.Location = New System.Drawing.Point(92, 21)
+        Me.txtIdFactura.Name = "txtIdFactura"
+        Me.txtIdFactura.Size = New System.Drawing.Size(57, 20)
+        Me.txtIdFactura.TabIndex = 19
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(34, 22)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(52, 13)
+        Me.Label23.TabIndex = 18
+        Me.Label23.Text = "IdFactura"
         '
         'cboCondicion
         '
@@ -189,6 +216,7 @@ Partial Class frm_Factura
         '
         'txtNroComp
         '
+        Me.txtNroComp.Enabled = False
         Me.txtNroComp.Location = New System.Drawing.Point(216, 74)
         Me.txtNroComp.Name = "txtNroComp"
         Me.txtNroComp.Size = New System.Drawing.Size(121, 20)
@@ -196,6 +224,7 @@ Partial Class frm_Factura
         '
         'txtPuntoVenta
         '
+        Me.txtPuntoVenta.Enabled = False
         Me.txtPuntoVenta.Location = New System.Drawing.Point(92, 74)
         Me.txtPuntoVenta.Name = "txtPuntoVenta"
         Me.txtPuntoVenta.Size = New System.Drawing.Size(57, 20)
@@ -333,11 +362,11 @@ Partial Class frm_Factura
         '
         'Button6
         '
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
         Me.Button6.Location = New System.Drawing.Point(193, 19)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(42, 23)
         Me.Button6.TabIndex = 12
-        Me.Button6.Text = "..."
         Me.Button6.UseVisualStyleBackColor = True
         '
         'txtIdCliente
@@ -394,7 +423,7 @@ Partial Class frm_Factura
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(4, 353)
+        Me.Label21.Location = New System.Drawing.Point(18, 353)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(63, 13)
         Me.Label21.TabIndex = 32
@@ -419,20 +448,20 @@ Partial Class frm_Factura
         '
         'cmdQuitar
         '
+        Me.cmdQuitar.Image = CType(resources.GetObject("cmdQuitar.Image"), System.Drawing.Image)
         Me.cmdQuitar.Location = New System.Drawing.Point(594, 144)
         Me.cmdQuitar.Name = "cmdQuitar"
         Me.cmdQuitar.Size = New System.Drawing.Size(42, 23)
         Me.cmdQuitar.TabIndex = 29
-        Me.cmdQuitar.Text = "-"
         Me.cmdQuitar.UseVisualStyleBackColor = True
         '
         'cmdAgregar
         '
+        Me.cmdAgregar.Image = CType(resources.GetObject("cmdAgregar.Image"), System.Drawing.Image)
         Me.cmdAgregar.Location = New System.Drawing.Point(546, 144)
         Me.cmdAgregar.Name = "cmdAgregar"
         Me.cmdAgregar.Size = New System.Drawing.Size(42, 22)
         Me.cmdAgregar.TabIndex = 28
-        Me.cmdAgregar.Text = "+"
         Me.cmdAgregar.UseVisualStyleBackColor = True
         '
         'txtPrecioUnidad
@@ -475,11 +504,11 @@ Partial Class frm_Factura
         '
         'cmdBuscar
         '
+        Me.cmdBuscar.Image = CType(resources.GetObject("cmdBuscar.Image"), System.Drawing.Image)
         Me.cmdBuscar.Location = New System.Drawing.Point(343, 18)
         Me.cmdBuscar.Name = "cmdBuscar"
         Me.cmdBuscar.Size = New System.Drawing.Size(42, 23)
         Me.cmdBuscar.TabIndex = 19
-        Me.cmdBuscar.Text = "..."
         Me.cmdBuscar.UseVisualStyleBackColor = True
         '
         'Label14
@@ -559,67 +588,72 @@ Partial Class frm_Factura
         '
         'cmdCancelar
         '
-        Me.cmdCancelar.Location = New System.Drawing.Point(642, 362)
+        Me.cmdCancelar.Image = CType(resources.GetObject("cmdCancelar.Image"), System.Drawing.Image)
+        Me.cmdCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdCancelar.Location = New System.Drawing.Point(643, 362)
         Me.cmdCancelar.Name = "cmdCancelar"
-        Me.cmdCancelar.Size = New System.Drawing.Size(102, 23)
+        Me.cmdCancelar.Size = New System.Drawing.Size(85, 23)
         Me.cmdCancelar.TabIndex = 4
         Me.cmdCancelar.Text = "Cancelar"
         Me.cmdCancelar.UseVisualStyleBackColor = True
         '
         'cmdAceptar
         '
-        Me.cmdAceptar.Location = New System.Drawing.Point(534, 362)
+        Me.cmdAceptar.Image = CType(resources.GetObject("cmdAceptar.Image"), System.Drawing.Image)
+        Me.cmdAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdAceptar.Location = New System.Drawing.Point(546, 362)
         Me.cmdAceptar.Name = "cmdAceptar"
-        Me.cmdAceptar.Size = New System.Drawing.Size(102, 23)
+        Me.cmdAceptar.Size = New System.Drawing.Size(85, 23)
         Me.cmdAceptar.TabIndex = 3
         Me.cmdAceptar.Text = "Aceptar"
         Me.cmdAceptar.UseVisualStyleBackColor = True
         '
         'grlGrillaa
         '
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.AliceBlue
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.AliceBlue
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        Me.grlGrillaa.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        Me.grlGrillaa.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.grlGrillaa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.grlGrillaa.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.grlGrillaa.BackgroundColor = System.Drawing.SystemColors.Control
         Me.grlGrillaa.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.grlGrillaa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.grlGrillaa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.HotTrack
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grlGrillaa.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HotTrack
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grlGrillaa.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.grlGrillaa.ColumnHeadersHeight = 32
         Me.grlGrillaa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.grlGrillaa.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.AliceBlue
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.AliceBlue
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.grlGrillaa.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grlGrillaa.DefaultCellStyle = DataGridViewCellStyle3
         Me.grlGrillaa.EnableHeadersVisualStyles = False
         Me.grlGrillaa.GridColor = System.Drawing.Color.LightSteelBlue
         Me.grlGrillaa.Location = New System.Drawing.Point(33, 173)
         Me.grlGrillaa.Name = "grlGrillaa"
         Me.grlGrillaa.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.AliceBlue
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.AliceBlue
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grlGrillaa.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grlGrillaa.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.grlGrillaa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grlGrillaa.Size = New System.Drawing.Size(695, 134)
         Me.grlGrillaa.TabIndex = 11
         '
@@ -658,14 +692,14 @@ Partial Class frm_Factura
         Me.Column5.Name = "Column5"
         Me.Column5.Width = 62
         '
-        'Button3
+        'cmdLimpiar
         '
-        Me.Button3.Location = New System.Drawing.Point(21, 12)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(101, 23)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Limpiar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.cmdLimpiar.Location = New System.Drawing.Point(21, 12)
+        Me.cmdLimpiar.Name = "cmdLimpiar"
+        Me.cmdLimpiar.Size = New System.Drawing.Size(101, 23)
+        Me.cmdLimpiar.TabIndex = 6
+        Me.cmdLimpiar.Text = "Limpiar"
+        Me.cmdLimpiar.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -679,37 +713,11 @@ Partial Class frm_Factura
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 9)
+        Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label10.Location = New System.Drawing.Point(0, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 13)
+        Me.Label10.Size = New System.Drawing.Size(0, 13)
         Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Label10"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(34, 22)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(52, 13)
-        Me.Label23.TabIndex = 18
-        Me.Label23.Text = "IdFactura"
-        '
-        'txtIdFactura
-        '
-        Me.txtIdFactura.Enabled = False
-        Me.txtIdFactura.Location = New System.Drawing.Point(92, 21)
-        Me.txtIdFactura.Name = "txtIdFactura"
-        Me.txtIdFactura.Size = New System.Drawing.Size(57, 20)
-        Me.txtIdFactura.TabIndex = 19
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(155, 19)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(42, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "..."
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'frm_Factura
         '
@@ -718,7 +726,7 @@ Partial Class frm_Factura
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(797, 683)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.cmdLimpiar)
         Me.Controls.Add(Me.Productos)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -750,7 +758,7 @@ Partial Class frm_Factura
     Friend WithEvents txtNroComp As System.Windows.Forms.TextBox
     Friend WithEvents txtPuntoVenta As System.Windows.Forms.TextBox
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents cmdLimpiar As System.Windows.Forms.Button
     Public WithEvents txtIdCliente As System.Windows.Forms.TextBox
     Public WithEvents txtLocalidad As System.Windows.Forms.TextBox
     Public WithEvents txtDireccion As System.Windows.Forms.TextBox
@@ -795,11 +803,11 @@ Partial Class frm_Factura
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents cboCondicion As System.Windows.Forms.ComboBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents txtIdFactura As System.Windows.Forms.TextBox
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
 End Class

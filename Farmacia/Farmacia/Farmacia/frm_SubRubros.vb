@@ -52,7 +52,7 @@ Public Class frm_SubRubros
                     grl_Grilla.Enabled = False
                     Limpiar()
                     txt_SubRubro.Focus()
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     lbl_Accion.Text = "Agregando"
                     lbl_Accion.ForeColor = Color.Black
 
@@ -64,7 +64,7 @@ Public Class frm_SubRubros
                     cmd_Cancelar.Enabled = True
                     DesHabililarComandos()
                     grl_Grilla.Enabled = False
-                    Panel1.BackColor = Color.GreenYellow
+                    Panel1.BackColor = Color.MediumAquamarine
                     lbl_Accion.Text = "Modificando"
                     lbl_Accion.ForeColor = Color.Black
 

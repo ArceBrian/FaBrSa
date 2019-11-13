@@ -22,6 +22,7 @@ Partial Class frm_ClientesItem
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_ClientesItem))
         Me.cmdLimpiar = New System.Windows.Forms.Button()
         Me.cmdFiltrarD = New System.Windows.Forms.Button()
         Me.txtFiltrar = New System.Windows.Forms.TextBox()
@@ -43,11 +44,13 @@ Partial Class frm_ClientesItem
         '
         'cmdFiltrarD
         '
+        Me.cmdFiltrarD.Image = CType(resources.GetObject("cmdFiltrarD.Image"), System.Drawing.Image)
+        Me.cmdFiltrarD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdFiltrarD.Location = New System.Drawing.Point(173, 5)
         Me.cmdFiltrarD.Name = "cmdFiltrarD"
         Me.cmdFiltrarD.Size = New System.Drawing.Size(125, 23)
         Me.cmdFiltrarD.TabIndex = 8
-        Me.cmdFiltrarD.Text = "Buscar"
+        Me.cmdFiltrarD.Text = "Buscar nombre"
         Me.cmdFiltrarD.UseVisualStyleBackColor = True
         '
         'txtFiltrar
@@ -78,11 +81,11 @@ Partial Class frm_ClientesItem
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 4)
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(0, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
         '
         'frm_ClientesItem
         '
@@ -96,7 +99,7 @@ Partial Class frm_ClientesItem
         Me.Controls.Add(Me.grlGrilla1)
         Me.Name = "frm_ClientesItem"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Clientes Item"
+        Me.Text = "Clientes item"
         CType(Me.grlGrilla1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

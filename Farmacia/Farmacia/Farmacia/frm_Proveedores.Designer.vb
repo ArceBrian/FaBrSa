@@ -22,6 +22,7 @@ Partial Class frm_Proveedores
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Proveedores))
         Me.grl_Grilla = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_Accion = New System.Windows.Forms.Label()
@@ -61,15 +62,17 @@ Partial Class frm_Proveedores
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.lbl_Accion)
-        Me.Panel1.Location = New System.Drawing.Point(-7, 407)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 401)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(576, 31)
+        Me.Panel1.Size = New System.Drawing.Size(566, 31)
         Me.Panel1.TabIndex = 16
         '
         'lbl_Accion
         '
         Me.lbl_Accion.AutoSize = True
-        Me.lbl_Accion.Location = New System.Drawing.Point(16, 3)
+        Me.lbl_Accion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_Accion.Location = New System.Drawing.Point(0, 0)
         Me.lbl_Accion.Name = "lbl_Accion"
         Me.lbl_Accion.Size = New System.Drawing.Size(0, 13)
         Me.lbl_Accion.TabIndex = 0
@@ -92,25 +95,29 @@ Partial Class frm_Proveedores
         Me.grp_Informacion.Controls.Add(Me.Label1)
         Me.grp_Informacion.Location = New System.Drawing.Point(109, 176)
         Me.grp_Informacion.Name = "grp_Informacion"
-        Me.grp_Informacion.Size = New System.Drawing.Size(357, 185)
+        Me.grp_Informacion.Size = New System.Drawing.Size(369, 185)
         Me.grp_Informacion.TabIndex = 15
         Me.grp_Informacion.TabStop = False
         Me.grp_Informacion.Text = "Datos Proveedor"
         '
         'cmd_Aceptar
         '
+        Me.cmd_Aceptar.Image = CType(resources.GetObject("cmd_Aceptar.Image"), System.Drawing.Image)
+        Me.cmd_Aceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmd_Aceptar.Location = New System.Drawing.Point(276, 122)
         Me.cmd_Aceptar.Name = "cmd_Aceptar"
-        Me.cmd_Aceptar.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_Aceptar.Size = New System.Drawing.Size(81, 23)
         Me.cmd_Aceptar.TabIndex = 5
         Me.cmd_Aceptar.Text = "Aceptar"
         Me.cmd_Aceptar.UseVisualStyleBackColor = True
         '
         'cmd_Cancelar
         '
+        Me.cmd_Cancelar.Image = CType(resources.GetObject("cmd_Cancelar.Image"), System.Drawing.Image)
+        Me.cmd_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmd_Cancelar.Location = New System.Drawing.Point(276, 151)
         Me.cmd_Cancelar.Name = "cmd_Cancelar"
-        Me.cmd_Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_Cancelar.Size = New System.Drawing.Size(81, 23)
         Me.cmd_Cancelar.TabIndex = 6
         Me.cmd_Cancelar.Text = "Cancelar"
         Me.cmd_Cancelar.UseVisualStyleBackColor = True

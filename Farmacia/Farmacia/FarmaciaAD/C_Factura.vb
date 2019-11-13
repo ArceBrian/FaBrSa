@@ -17,6 +17,7 @@ Public Class C_Factura
 
     End Sub
 
+#Region "TipoFactura"
     Public Function TipoFactura() As DataSet
         Try
             Return oDatabase.ExecuteDataSet("TipoFactura")
@@ -24,7 +25,9 @@ Public Class C_Factura
             Throw ex
         End Try
     End Function
+#End Region
 
+#Region "CondicionIva"
     Public Function Condicion() As DataSet
         Try
             Return oDatabase.ExecuteDataSet("CondicionesIvabuscar")
@@ -32,7 +35,9 @@ Public Class C_Factura
             Throw ex
         End Try
     End Function
+#End Region
 
+#Region "FacturasBuscar"
     Public Function FacturaBuscar() As DataSet
         Try
             Return oDatabase.ExecuteDataSet("FacturasBuscar")
@@ -40,15 +45,17 @@ Public Class C_Factura
             Throw ex
         End Try
     End Function
+#End Region
 
-    Public Function NumeroComprobante(letra As String, puntoventa As Integer) As DataSet
+#Region "NumeroComprobante"
+    Public Function NumeroComprobante() As DataSet
         Try
             Return oDatabase.ExecuteDataSet("NumeroComprobante")
         Catch ex As System.Exception
             Throw ex
         End Try
     End Function
-
+#End Region
 
 #Region "Cargar"
     Public Function AgregarFactura(ByVal Letra As String, ByVal PuntoVenta As Integer, ByVal Numero As Integer, ByVal IdCliente As Integer, ByVal Fecha As Date, ByVal Total As Double) As Double

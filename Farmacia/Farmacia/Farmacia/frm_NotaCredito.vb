@@ -95,8 +95,9 @@ Public Class frm_NotaCredito
 
         cargarcboFacturas()
         CondicionesIva()
+        NumeroComprobante()
 
-        Panel1.BackColor = Color.GreenYellow
+        Panel1.BackColor = Color.MediumAquamarine
         Label10.Text = "Agregando"
         Label10.ForeColor = Color.Black
 
@@ -143,7 +144,7 @@ Public Class frm_NotaCredito
         Dim ods As New DataSet
         Dim oFactura As New C_Factura
 
-        ods = oFactura.NumeroComprobante(cboTipoFact.Text, txtPuntoVenta.Text)
+        ods = oFactura.NumeroComprobante()
 
         txtNroComp.Text = ods.Tables(0).Rows(0).Item("Numero").ToString.PadLeft(8, "0")
     End Sub
