@@ -32,4 +32,5 @@ Public Class C_ClientesItem
         Return oDatabase.ExecuteDataSet("FiltrarDatosClientes", Descripcion)
     End Function
 #End Region
+
 End Class
