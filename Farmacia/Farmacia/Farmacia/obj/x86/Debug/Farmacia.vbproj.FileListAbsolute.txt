@@ -167,3 +167,4 @@ C:\Users\Admin\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\
 C:\Users\Admin\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
 C:\Users\Admin\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
 C:\Users\Admin\Documents\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+
