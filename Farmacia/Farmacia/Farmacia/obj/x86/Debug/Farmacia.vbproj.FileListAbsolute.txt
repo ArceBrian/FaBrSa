@@ -123,3 +123,4 @@ F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\D
 F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_SubRubros.resources
 F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.Resources.resources
 F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.vbproj.GenerateResource.Cache
+F:\usuarios\alumno\Documentos\GitHub\FaBrSa\Farmacia\Farmacia\Farmacia\obj\x86\Debug\Farmacia.frm_FacturasItem.resources

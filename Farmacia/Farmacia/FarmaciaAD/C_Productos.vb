@@ -57,6 +57,7 @@ Public Class C_Productos
     End Function
 #End Region
 
+#Region "ProductosAgregar"
     Public Function Agregar(ByVal CodigoMSP As Integer, ByVal Descripcion As String, ByVal IdSeccion As Integer, ByVal Seccion As String, ByVal Venta As Integer, ByVal TipoCodBarra1 As String, ByVal CodigoBarra1 As String, ByVal TipoCodBarra2 As String, ByVal CodigoBarra2 As String, ByVal TipoCodBarra3 As String, ByVal CodigoBarra3 As String, ByVal TipoCodBarra4 As String, ByVal CodigoBarra4 As String, ByVal PrecioVentaCliente As Integer, ByVal PrecioSugerido As Integer, ByVal CodigoLaboratorio As Integer, ByVal Laboratorio As String, ByVal CuitLaboratorio As Integer, ByVal IdSubRubro As Integer, ByVal Cantidad As Integer) As Double
         Try
             Return oDatabase.ExecuteScalar("ProductossAgregar", CodigoMSP, Descripcion, IdSeccion, Seccion, Venta, TipoCodBarra1, CodigoBarra1, TipoCodBarra2, CodigoBarra2, TipoCodBarra3, CodigoBarra3, TipoCodBarra4, CodigoBarra4, PrecioVentaCliente, PrecioSugerido, CodigoLaboratorio, Laboratorio, CuitLaboratorio, IdSubRubro, Cantidad)
@@ -74,6 +75,7 @@ Public Class C_Productos
             Throw ex
         End Try
     End Function
+#End Region
 
 #Region "FiltrarDatos"
     Public Function FiltrarDatos(ByVal Descripcion As String) As DataSet
