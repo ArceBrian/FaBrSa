@@ -234,9 +234,9 @@ Public Class frm_CargaCliente
     End Sub
 
     Private Sub CmdCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-               "Se perderán las ultimas modificaciones", _
-               vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+        If MsgBox("¿Está seguro que desea cancelar?" & vbCrLf & _
+               "Se perderán las últimas modificaciones", _
+               vbYesNo, "Confirmación de acción") = MsgBoxResult.Yes Then
 
             Me.Estado = EstadodelFormulario.eConsulta
 

@@ -284,8 +284,7 @@ Public Class frm_Productos
         Me.Estado = EstadodelFormulario.eEditar
     End Sub
 
-    Private Sub cmdAceptar_Click_1(sender As System.Object, e As System.EventArgs) Handles cmdAceptar.Click
-
+    Private Sub cmdAceptar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAceptar.Click
         Try
 
             If Validar() = True Then
@@ -302,7 +301,7 @@ Public Class frm_Productos
                 If Me.Estado = EstadodelFormulario.eAgregar Then
                     Dim resultado As Integer
                     resultado = oProducto.Agregar(txt_CodigoMSP.Text, txt_Descripcion.Text, txt_IdSeccion.Text, txt_Seccion.Text, txt_Venta.Text, txt_TipoCodBarra1.Text, txt_CodigoBarra1.Text, txt_TipoCodBarra2.Text, txt_CodigoBarra2.Text, txt_TipoCodBarra3.Text, txt_CodigoBarra3.Text, txt_TipoCodBarra4.Text, txt_CodigoBarra4.Text, txt_PrecioVentaCliente.Text, txt_PrecioSugerido.Text, txt_CodigoLaboratorio.Text, txt_Laboratorio.Text, txt_CuitLaboratorio.Text, cbo_IdSubRubro.Text, txt_Cantidad.Text)
-                    MsgBox("Se agregó correctamente el rubro " + txt_IdProducto.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
+                    MsgBox("Se agregó correctamente el rubro " + txt_IdProducto.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "¡Éxitos!")
                 End If
 
                 Me.Estado = EstadodelFormulario.eConsulta
@@ -318,10 +317,10 @@ Public Class frm_Productos
 
     End Sub
 
-    Private Sub cmdCancelar_Click_1(sender As System.Object, e As System.EventArgs) Handles cmdCancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-               "Se perderán las ultimas modificaciones", _
-               vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+    Private Sub cmdCancelar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancelar.Click
+        If MsgBox("¿Está seguro que desea cancelar?" & vbCrLf & _
+               "Se perderán las últimas modificaciones", _
+               vbYesNo, "Confirmación de acción") = MsgBoxResult.Yes Then
 
             Me.Estado = EstadodelFormulario.eConsulta
 
@@ -396,9 +395,9 @@ Public Class frm_Productos
     End Sub
 
     Private Sub cmdCancelar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-          "Se perderán las ultimas modificaciones", _
-          vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+        If MsgBox("¿Está seguro que desea cancelar?" & vbCrLf & _
+          "Se perderán las últimas modificaciones", _
+          vbYesNo, "confirmacion de acción") = MsgBoxResult.Yes Then
 
             Me.Estado = EstadodelFormulario.eConsulta
 
@@ -406,9 +405,5 @@ Public Class frm_Productos
 
 
         Exit Sub
-    End Sub
-
-    Private Sub cbo_IdSubRubro_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbo_IdSubRubro.SelectedIndexChanged
-
     End Sub
 End Class
