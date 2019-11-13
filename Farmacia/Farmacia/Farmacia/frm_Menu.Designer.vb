@@ -34,7 +34,6 @@ Partial Class frm_Menu
         Me.CuentaCorrienteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DetallesFacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -42,7 +41,7 @@ Partial Class frm_Menu
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.MediumAquamarine
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.DetallesFacturasToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(422, 24)
@@ -59,19 +58,19 @@ Partial Class frm_Menu
         'RubrosToolStripMenuItem
         '
         Me.RubrosToolStripMenuItem.Name = "RubrosToolStripMenuItem"
-        Me.RubrosToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.RubrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RubrosToolStripMenuItem.Text = "Rubros"
         '
         'SubRubrosToolStripMenuItem
         '
         Me.SubRubrosToolStripMenuItem.Name = "SubRubrosToolStripMenuItem"
-        Me.SubRubrosToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.SubRubrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SubRubrosToolStripMenuItem.Text = "SubRubros"
         '
         'ProductosToolStripMenuItem1
         '
         Me.ProductosToolStripMenuItem1.Name = "ProductosToolStripMenuItem1"
-        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(131, 22)
+        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ProductosToolStripMenuItem1.Text = "Productos"
         '
         'ClientesToolStripMenuItem
@@ -111,12 +110,6 @@ Partial Class frm_Menu
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
         Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
-        '
-        'DetallesFacturasToolStripMenuItem
-        '
-        Me.DetallesFacturasToolStripMenuItem.Name = "DetallesFacturasToolStripMenuItem"
-        Me.DetallesFacturasToolStripMenuItem.Size = New System.Drawing.Size(104, 20)
-        Me.DetallesFacturasToolStripMenuItem.Text = "DetallesFacturas"
         '
         'Panel1
         '
@@ -162,5 +155,4 @@ Partial Class frm_Menu
     Friend WithEvents CuentaCorrienteToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents DetallesFacturasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

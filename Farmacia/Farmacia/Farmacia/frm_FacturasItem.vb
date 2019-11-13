@@ -1,5 +1,5 @@
 ﻿Imports FarmaciaAD
-Public Class frm_FacturaDetalleVer
+Public Class frm_FacturasItem
 
 #Region "Variables"
 
@@ -50,7 +50,7 @@ Public Class frm_FacturaDetalleVer
 
     Private Sub BuscarTodos()
         Dim oDs As New DataSet
-        Dim oFarmacia As New C_FacturasDetalleVer
+        Dim oFarmacia As New C_FacturasItem
 
         oDs = oFarmacia.BuscarTodos
 
@@ -69,36 +69,13 @@ Public Class frm_FacturaDetalleVer
 
 #End Region
 
-#Region "BuscarID"
-    Private Sub BuscarPorID(ByVal ID As Integer)
-
-        Dim oDs As New DataSet
-        Dim oFarmacia As New C_FacturasDetalleVer
-
-        oDs = oFarmacia.BuscarPorId(ID)
-
-        TextBox1.Text = oDs.Tables(0).Rows(0).Item("IdFacturaDetalle")
-        TextBox2.Text = oDs.Tables(0).Rows(0).Item("IdFactura")
-        TextBox3.Text = oDs.Tables(0).Rows(0).Item("Descripcion")
-        TextBox4.Text = oDs.Tables(0).Rows(0).Item("Cantidad")
-        TextBox5.Text = oDs.Tables(0).Rows(0).Item("PrecioUnitario")
-        TextBox6.Text = oDs.Tables(0).Rows(0).Item("Total")
-
-        oDs = Nothing
-        oFarmacia = Nothing
-
-    End Sub
-
-    Private Sub grlFacturas_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlFacturas.CellContentClick
-        BuscarPorID(grlFacturas.CurrentRow.Cells(0).Value)
-    End Sub
-#End Region
-
 #Region "FiltrarD"
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Dim ods As New DataSet
-        Dim oFarmacia As New C_FacturasDetalleVer
+        Dim oFarmacia As New C_FacturasItem
+
         If txtFiltrar.Text <> Nothing Then
+
             ods = oFarmacia.FiltrarDatos(txtFiltrar.Text)
             grlFacturas.DataSource = ods.Tables(0)
             grlFacturas.Refresh()
