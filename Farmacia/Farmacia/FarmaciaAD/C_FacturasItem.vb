@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 Imports System.IO
 Imports Microsoft.Practices.EnterpriseLibrary.Data
 
-Public Class C_FacturasDetalleVer
+Public Class C_FacturasItem
     Dim oDatabase As Database
 
     Public Sub New()

@@ -27,8 +27,4 @@
     Private Sub ProductosToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem1.Click
         frm_Productos.Show()
     End Sub
-
-    Private Sub DetallesFacturasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles DetallesFacturasToolStripMenuItem.Click
-        frm_FacturaDetalleVer.Show()
-    End Sub
 End Class
