@@ -1,10 +1,10 @@
 ﻿Imports FarmaciaAD
 Public Class frm_NotaCredito
-    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+    Private Sub cmd_IdCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_IdCliente.Click
         frm_ClientesItem.ShowDialog()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBuscar.Click
+    Private Sub cmd_IdFactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBuscar.Click
         frm_ProductosItem.ShowDialog()
         txtCantidad.Focus()
     End Sub

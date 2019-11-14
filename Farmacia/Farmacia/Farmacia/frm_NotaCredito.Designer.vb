@@ -28,7 +28,7 @@ Partial Class frm_NotaCredito
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cmd_IdFactura = New System.Windows.Forms.Button()
         Me.txtIdFactura = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.cboCondicion = New System.Windows.Forms.ComboBox()
@@ -55,7 +55,7 @@ Partial Class frm_NotaCredito
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombreCliente = New System.Windows.Forms.TextBox()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.cmd_IdCliente = New System.Windows.Forms.Button()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.Productos = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -99,7 +99,7 @@ Partial Class frm_NotaCredito
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.cmd_IdFactura)
         Me.GroupBox1.Controls.Add(Me.txtIdFactura)
         Me.GroupBox1.Controls.Add(Me.Label23)
         Me.GroupBox1.Controls.Add(Me.cboCondicion)
@@ -119,14 +119,14 @@ Partial Class frm_NotaCredito
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Fatura"
         '
-        'Button1
+        'cmd_IdFactura
         '
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(155, 19)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(42, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cmd_IdFactura.Image = CType(resources.GetObject("cmd_IdFactura.Image"), System.Drawing.Image)
+        Me.cmd_IdFactura.Location = New System.Drawing.Point(155, 19)
+        Me.cmd_IdFactura.Name = "cmd_IdFactura"
+        Me.cmd_IdFactura.Size = New System.Drawing.Size(42, 23)
+        Me.cmd_IdFactura.TabIndex = 20
+        Me.cmd_IdFactura.UseVisualStyleBackColor = True
         '
         'txtIdFactura
         '
@@ -243,7 +243,7 @@ Partial Class frm_NotaCredito
         Me.GroupBox2.Controls.Add(Me.txtDireccion)
         Me.GroupBox2.Controls.Add(Me.txtApellido)
         Me.GroupBox2.Controls.Add(Me.txtNombreCliente)
-        Me.GroupBox2.Controls.Add(Me.Button6)
+        Me.GroupBox2.Controls.Add(Me.cmd_IdCliente)
         Me.GroupBox2.Controls.Add(Me.txtIdCliente)
         Me.GroupBox2.Location = New System.Drawing.Point(383, 42)
         Me.GroupBox2.Name = "GroupBox2"
@@ -358,14 +358,14 @@ Partial Class frm_NotaCredito
         Me.txtNombreCliente.Size = New System.Drawing.Size(291, 20)
         Me.txtNombreCliente.TabIndex = 13
         '
-        'Button6
+        'cmd_IdCliente
         '
-        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.Location = New System.Drawing.Point(193, 19)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(42, 23)
-        Me.Button6.TabIndex = 12
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.cmd_IdCliente.Image = CType(resources.GetObject("cmd_IdCliente.Image"), System.Drawing.Image)
+        Me.cmd_IdCliente.Location = New System.Drawing.Point(193, 19)
+        Me.cmd_IdCliente.Name = "cmd_IdCliente"
+        Me.cmd_IdCliente.Size = New System.Drawing.Size(42, 23)
+        Me.cmd_IdCliente.TabIndex = 12
+        Me.cmd_IdCliente.UseVisualStyleBackColor = True
         '
         'txtIdCliente
         '
@@ -727,7 +727,7 @@ Partial Class frm_NotaCredito
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "frm_NotaCredito"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Nota de credito"
+        Me.Text = "Nota de crédito"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -750,7 +750,7 @@ Partial Class frm_NotaCredito
     Friend WithEvents cboTipoFact As System.Windows.Forms.ComboBox
     Friend WithEvents txtNroComp As System.Windows.Forms.TextBox
     Friend WithEvents txtPuntoVenta As System.Windows.Forms.TextBox
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents cmd_IdCliente As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Public WithEvents txtIdCliente As System.Windows.Forms.TextBox
     Public WithEvents txtLocalidad As System.Windows.Forms.TextBox
@@ -802,5 +802,5 @@ Partial Class frm_NotaCredito
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents txtIdFactura As System.Windows.Forms.TextBox
     Friend WithEvents Label23 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cmd_IdFactura As System.Windows.Forms.Button
 End Class
