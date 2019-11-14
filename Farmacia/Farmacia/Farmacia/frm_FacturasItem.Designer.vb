@@ -41,7 +41,7 @@ Partial Class frm_FacturasItem
         Me.txtFiltrar.AccessibleName = ""
         Me.txtFiltrar.Location = New System.Drawing.Point(12, 12)
         Me.txtFiltrar.Name = "txtFiltrar"
-        Me.txtFiltrar.Size = New System.Drawing.Size(230, 20)
+        Me.txtFiltrar.Size = New System.Drawing.Size(155, 20)
         Me.txtFiltrar.TabIndex = 8
         Me.txtFiltrar.Tag = ""
         '
@@ -52,7 +52,7 @@ Partial Class frm_FacturasItem
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 242)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(751, 27)
+        Me.Panel1.Size = New System.Drawing.Size(683, 27)
         Me.Panel1.TabIndex = 7
         '
         'Label2
@@ -80,7 +80,7 @@ Partial Class frm_FacturasItem
         Me.grlFacturas.Location = New System.Drawing.Point(6, 19)
         Me.grlFacturas.Name = "grlFacturas"
         Me.grlFacturas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlFacturas.Size = New System.Drawing.Size(715, 146)
+        Me.grlFacturas.Size = New System.Drawing.Size(648, 146)
         Me.grlFacturas.TabIndex = 6
         '
         'GroupBox2
@@ -88,7 +88,7 @@ Partial Class frm_FacturasItem
         Me.GroupBox2.Controls.Add(Me.grlFacturas)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 49)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(727, 177)
+        Me.GroupBox2.Size = New System.Drawing.Size(660, 177)
         Me.GroupBox2.TabIndex = 14
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Facturas"
@@ -97,9 +97,9 @@ Partial Class frm_FacturasItem
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(248, 9)
+        Me.Button1.Location = New System.Drawing.Point(173, 10)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(147, 23)
+        Me.Button1.Size = New System.Drawing.Size(125, 23)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "Buscar por nombre"
         Me.Button1.UseVisualStyleBackColor = True
@@ -108,7 +108,7 @@ Partial Class frm_FacturasItem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(751, 269)
+        Me.ClientSize = New System.Drawing.Size(683, 269)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.txtFiltrar)
