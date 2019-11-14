@@ -283,8 +283,7 @@ Public Class frm_Productos
         Me.Estado = EstadodelFormulario.eEditar
     End Sub
 
-    Private Sub cmdAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAceptar.Click
-
+    Private Sub cmdAceptar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAceptar.Click
         Try
 
             If Validar() = True Then
@@ -317,10 +316,10 @@ Public Class frm_Productos
 
     End Sub
 
-    Private Sub cmdCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-               "Se perderán las ultimas modificaciones", _
-               vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+    Private Sub cmdCancelar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancelar.Click
+        If MsgBox("¿Está seguro que desea cancelar?" & vbCrLf & _
+               "Se perderán las últimas modificaciones", _
+               vbYesNo, "Confirmación de acción") = MsgBoxResult.Yes Then
 
             Me.Estado = EstadodelFormulario.eConsulta
 

@@ -1,15 +1,15 @@
 ﻿Imports FarmaciaAD
 Public Class frm_Factura
-    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+    Private Sub cmd_IdCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_IdCliente.Click
         frm_ClientesItem.ShowDialog()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBuscar.Click
+    Private Sub cmd_IdFactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBuscar.Click
         frm_ProductosItem.ShowDialog()
         txtCantidad.Focus()
     End Sub
 
-    Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub cmd_IdFactura_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_IdFactura.Click
         frm_FacturasItem.ShowDialog()
     End Sub
 
@@ -152,7 +152,7 @@ Public Class frm_Factura
 
             Next
 
-        MsgBox("Se realizó la factura exitosamente!")
+        MsgBox("¡Se realizó la factura exitosamente!")
 
 
 
@@ -161,9 +161,9 @@ Public Class frm_Factura
 
 #Region "Cancelar"
     Private Sub cmdCancelar_Click(sender As System.Object, e As System.EventArgs) Handles cmdCancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-              "Se perderán las ultimas modificaciones", _
-              vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+        If MsgBox("¿Está seguro que desea cancelar?" & vbCrLf & _
+              "Se perderán las últimas modificaciones", _
+              vbYesNo, "Confirmación de acción") = MsgBoxResult.Yes Then
 
             grlGrillaa.Rows.Clear()
             txtIdCliente.Text = ""
@@ -187,9 +187,9 @@ Public Class frm_Factura
 
 #Region "Limpiar"
     Private Sub cmdLimpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdLimpiar.Click
-        If MsgBox("Esta seguro de limpiar el formulario?" & vbCrLf & _
+        If MsgBox("¿Está seguro que desea limpiar el formulario?" & vbCrLf & _
       "Se perderán las ultimas modificaciones", _
-      vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+      vbYesNo, "Confirmación de acción") = MsgBoxResult.Yes Then
 
             grlGrillaa.Rows.Clear()
             txtIdCliente.Text = ""

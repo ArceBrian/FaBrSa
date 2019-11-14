@@ -37,7 +37,7 @@ Partial Class frm_SubRubros
         Me.cmd_Limpiar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.grl_Grilla = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cmd_Salir = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_Accion = New System.Windows.Forms.Label()
@@ -172,14 +172,14 @@ Partial Class frm_SubRubros
         Me.grl_Grilla.Size = New System.Drawing.Size(424, 150)
         Me.grl_Grilla.TabIndex = 33
         '
-        'Button1
+        'cmd_Salir
         '
-        Me.Button1.Location = New System.Drawing.Point(361, 344)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 34
-        Me.Button1.Text = "&Salir"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cmd_Salir.Location = New System.Drawing.Point(361, 344)
+        Me.cmd_Salir.Name = "cmd_Salir"
+        Me.cmd_Salir.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_Salir.TabIndex = 34
+        Me.cmd_Salir.Text = "&Salir"
+        Me.cmd_Salir.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -223,7 +223,7 @@ Partial Class frm_SubRubros
         Me.ClientSize = New System.Drawing.Size(448, 396)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.cmd_Salir)
         Me.Controls.Add(Me.grl_Grilla)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.cmd_Limpiar)
@@ -255,7 +255,7 @@ Partial Class frm_SubRubros
     Friend WithEvents cmd_Limpiar As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents grl_Grilla As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cmd_Salir As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lbl_Accion As System.Windows.Forms.Label

@@ -241,9 +241,9 @@ Public Class frm_SubRubros
     End Sub
 
     Private Sub CmdCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Cancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-               "Se perderán las ultimas modificaciones", _
-               vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+        If MsgBox("¿Está seguro que desea cancelar?" & vbCrLf & _
+               "Se perderán las últimas modificaciones", _
+               vbYesNo, "Confirmación de Acción") = MsgBoxResult.Yes Then
 
             Me.Estado = EstadodelFormulario.eConsulta
 
@@ -291,7 +291,7 @@ Public Class frm_SubRubros
     'End Sub
 
 #Region "Salir"
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub cmd_Salir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Salir.Click
         Close()
     End Sub
 #End Region

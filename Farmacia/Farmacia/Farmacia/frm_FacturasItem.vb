@@ -83,4 +83,17 @@ Public Class frm_FacturasItem
     End Sub
 #End Region
 
+#Region "PasarDatosDesdeGrillaATxt"
+    Private Sub grlFacturas_CellClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlFacturas.CellClick
+        frm_Factura.txtIdFactura.Text = grlFacturas.CurrentRow.Cells(0).Value.ToString
+        'frm_Factura.txtNombreCliente.Text = grlGrilla1.CurrentRow.Cells(1).Value.ToString
+        'frm_Factura.txtApellido.Text = grlGrilla1.CurrentRow.Cells(2).Value.ToString()
+        'frm_Factura.txtDireccion.Text = grlGrilla1.CurrentRow.Cells(3).Value.ToString()
+        'frm_Factura.txtLocalidad.Text = grlGrilla1.CurrentRow.Cells(4).Value.ToString()
+        'frm_Factura.txtTelefono.Text = grlGrilla1.CurrentRow.Cells(5).Value.ToString()
+        'frm_Factura.txtEstado.Text = grlGrilla1.CurrentRow.Cells(6).Value.ToString()
+        'Close()
+    End Sub
+#End Region
+
 End Class
